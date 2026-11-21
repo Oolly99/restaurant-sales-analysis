@@ -60,7 +60,7 @@ export function DashboardContent() {
         {charts.map(([id, title, type, y, yLabel]) => {
           const rows = rowsFor(id);
           return <EvidenceChart key={id} id={id} queryId={id} title={title} variant="card"
-            spec={{ type, x: "name", y, yLabel, showXAxisLabel: false }}
+            spec={{ type, x: "name", y, yLabel, showXAxisLabel: false, ...(id === "hourly" ? { xScale: "category" } : {}) }}
             rows={rows} sourceRows={rows} height={id === "items" || id === "pairs" ? 330 : 250} />;
         })}
       </div>
