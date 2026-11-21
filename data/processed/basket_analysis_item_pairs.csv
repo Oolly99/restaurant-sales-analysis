@@ -1,0 +1,497 @@
+item_1,item_2,times_bought_together
+Edamame,Hamburger,78
+Cheeseburger,Edamame,75
+Cheeseburger,Hamburger,72
+Edamame,Korean Beef Bowl,68
+French Fries,Korean Beef Bowl,66
+Cheeseburger,Steak Torta,65
+Cheeseburger,French Fries,63
+Chips & Salsa,Edamame,62
+Hamburger,Korean Beef Bowl,61
+French Fries,Hamburger,61
+Korean Beef Bowl,Spaghetti & Meatballs,60
+Edamame,French Fries,60
+Edamame,Orange Chicken,59
+Chicken Burrito,Tofu Pad Thai,59
+Cheeseburger,Korean Beef Bowl,59
+Cheeseburger,Tofu Pad Thai,58
+Hamburger,Tofu Pad Thai,58
+Chips & Salsa,Steak Torta,58
+French Fries,Tofu Pad Thai,58
+Korean Beef Bowl,Tofu Pad Thai,58
+Steak Torta,Tofu Pad Thai,58
+French Fries,Mac & Cheese,57
+Cheeseburger,Chicken Burrito,56
+Cheeseburger,Mac & Cheese,56
+Edamame,Mac & Cheese,56
+French Fries,Orange Chicken,56
+Hamburger,Spaghetti & Meatballs,55
+Chips & Salsa,Hamburger,55
+Edamame,Spaghetti & Meatballs,54
+Edamame,Steak Torta,54
+Hamburger,Mac & Cheese,54
+Cheeseburger,Spaghetti & Meatballs,54
+French Fries,Steak Torta,52
+Hamburger,Steak Torta,52
+Chicken Burrito,French Fries,52
+Chicken Burrito,Edamame,52
+Chicken Burrito,Hamburger,51
+Cheeseburger,Chips & Salsa,51
+Chicken Burrito,Steak Torta,51
+Chips & Salsa,Korean Beef Bowl,50
+California Roll,Cheeseburger,50
+Korean Beef Bowl,Mushroom Ravioli,50
+Edamame,Steak Burrito,50
+Edamame,Tofu Pad Thai,50
+Korean Beef Bowl,Mac & Cheese,50
+Korean Beef Bowl,Steak Torta,49
+Orange Chicken,Steak Torta,48
+French Fries,Spaghetti,47
+Korean Beef Bowl,Steak Burrito,47
+Korean Beef Bowl,Orange Chicken,47
+Mac & Cheese,Spaghetti,47
+Orange Chicken,Tofu Pad Thai,47
+French Fries,Spaghetti & Meatballs,46
+Korean Beef Bowl,Spaghetti,46
+Chicken Parmesan,Edamame,46
+Orange Chicken,Spaghetti & Meatballs,45
+Chicken Torta,Edamame,45
+Hamburger,Orange Chicken,45
+Eggplant Parmesan,Tofu Pad Thai,45
+Chicken Parmesan,Korean Beef Bowl,45
+Eggplant Parmesan,Mac & Cheese,45
+Eggplant Parmesan,Steak Torta,45
+Spaghetti,Spaghetti & Meatballs,45
+Chicken Burrito,Mushroom Ravioli,44
+Spaghetti,Tofu Pad Thai,44
+Chicken Torta,Korean Beef Bowl,44
+Eggplant Parmesan,Hamburger,44
+Chips & Salsa,Tofu Pad Thai,44
+French Fries,Salmon Roll,44
+Chicken Parmesan,French Fries,44
+Eggplant Parmesan,Korean Beef Bowl,44
+Spaghetti & Meatballs,Tofu Pad Thai,44
+Chips & Salsa,Orange Chicken,44
+Hamburger,Spaghetti,43
+Chicken Burrito,Orange Chicken,43
+Chips & Salsa,Mac & Cheese,43
+Chicken Parmesan,Hamburger,43
+Mac & Cheese,Tofu Pad Thai,43
+Chicken Torta,Hamburger,43
+Hamburger,Salmon Roll,43
+Mac & Cheese,Steak Torta,43
+Spaghetti & Meatballs,Steak Torta,43
+Hamburger,Meat Lasagna,42
+Chicken Burrito,Spaghetti,42
+Cheeseburger,Spaghetti,42
+Edamame,Spaghetti,42
+Chips & Salsa,French Fries,42
+Orange Chicken,Pork Ramen,42
+Mac & Cheese,Orange Chicken,42
+Mushroom Ravioli,Spaghetti & Meatballs,41
+Cheeseburger,Pork Ramen,41
+Steak Burrito,Steak Torta,41
+Chicken Burrito,Korean Beef Bowl,41
+Eggplant Parmesan,French Fries,41
+Chicken Burrito,Spaghetti & Meatballs,41
+Hamburger,Pork Ramen,41
+Edamame,Eggplant Parmesan,40
+Hamburger,Steak Burrito,40
+Hamburger,Mushroom Ravioli,40
+California Roll,French Fries,40
+California Roll,Korean Beef Bowl,39
+Cheeseburger,Salmon Roll,39
+Edamame,Mushroom Ravioli,39
+Eggplant Parmesan,Spaghetti & Meatballs,39
+Chicken Burrito,Eggplant Parmesan,39
+French Fries,Pork Ramen,39
+Spaghetti,Steak Torta,39
+Pork Ramen,Steak Torta,39
+Cheeseburger,Chicken Torta,39
+Cheeseburger,Mushroom Ravioli,39
+California Roll,Chicken Burrito,37
+Salmon Roll,Steak Torta,37
+Mushroom Ravioli,Tofu Pad Thai,37
+Spaghetti & Meatballs,Steak Burrito,37
+Chicken Burrito,Chicken Torta,37
+Mac & Cheese,Spaghetti & Meatballs,37
+Chicken Torta,Spaghetti & Meatballs,37
+Cheeseburger,Chicken Parmesan,37
+Mac & Cheese,Pork Ramen,37
+California Roll,Hamburger,36
+Mushroom Ravioli,Pork Ramen,36
+Chips & Salsa,Eggplant Parmesan,36
+Chicken Burrito,Mac & Cheese,36
+Cheeseburger,Orange Chicken,36
+California Roll,Chips & Salsa,36
+Chips & Salsa,Spaghetti & Meatballs,36
+Chips & Salsa,Spaghetti,36
+Chicken Parmesan,Spaghetti & Meatballs,36
+Cheeseburger,Steak Burrito,36
+Cheeseburger,Eggplant Parmesan,36
+Chicken Burrito,Chips & Salsa,35
+Eggplant Parmesan,Spaghetti,35
+California Roll,Chicken Torta,35
+Pork Ramen,Tofu Pad Thai,35
+Tofu Pad Thai,Veggie Burger,35
+Edamame,Fettuccine Alfredo,35
+Eggplant Parmesan,Salmon Roll,34
+Cheeseburger,Hot Dog,34
+Mac & Cheese,Mushroom Ravioli,34
+Korean Beef Bowl,Salmon Roll,34
+Edamame,Salmon Roll,34
+Cheeseburger,Meat Lasagna,34
+Chips & Salsa,Steak Burrito,34
+French Fries,Mushroom Ravioli,34
+Pork Ramen,Spaghetti & Meatballs,34
+California Roll,Edamame,34
+Salmon Roll,Spaghetti & Meatballs,34
+Mac & Cheese,Salmon Roll,34
+California Roll,Spaghetti & Meatballs,33
+Steak Burrito,Tofu Pad Thai,33
+Chicken Parmesan,Orange Chicken,33
+Chicken Parmesan,Mac & Cheese,33
+California Roll,Steak Torta,33
+California Roll,Tofu Pad Thai,33
+Cheese Quesadillas,French Fries,33
+Korean Beef Bowl,Meat Lasagna,33
+Chips & Salsa,Mushroom Ravioli,33
+Chicken Torta,Steak Torta,32
+Cheeseburger,Veggie Burger,32
+Mushroom Ravioli,Steak Torta,32
+Fettuccine Alfredo,Korean Beef Bowl,32
+French Fries,Hot Dog,32
+Chips & Salsa,Fettuccine Alfredo,32
+Hot Dog,Tofu Pad Thai,31
+Mac & Cheese,Meat Lasagna,31
+Hamburger,Veggie Burger,31
+Salmon Roll,Tofu Pad Thai,31
+California Roll,Mac & Cheese,31
+Salmon Roll,Spaghetti,31
+Pork Ramen,Spaghetti,31
+Edamame,Pork Ramen,31
+Orange Chicken,Spaghetti,31
+Eggplant Parmesan,Orange Chicken,31
+Chicken Burrito,Steak Burrito,31
+Edamame,Shrimp Scampi,30
+Edamame,Steak Tacos,30
+California Roll,Eggplant Parmesan,30
+Fettuccine Alfredo,French Fries,30
+Chicken Burrito,Pork Ramen,30
+Chicken Parmesan,Steak Burrito,30
+Meat Lasagna,Spaghetti & Meatballs,30
+Mushroom Ravioli,Orange Chicken,30
+Hot Dog,Korean Beef Bowl,30
+Spaghetti,Steak Burrito,30
+Edamame,Veggie Burger,29
+Chicken Parmesan,Tofu Pad Thai,29
+Chicken Torta,Tofu Pad Thai,29
+California Roll,Pork Ramen,29
+Hamburger,Potstickers,29
+Hot Dog,Orange Chicken,28
+Chicken Burrito,Hot Dog,28
+Korean Beef Bowl,Pork Ramen,28
+Cheese Quesadillas,Tofu Pad Thai,28
+Chicken Parmesan,Steak Torta,28
+Chicken Parmesan,Spaghetti,28
+Cheese Quesadillas,Edamame,28
+Eggplant Parmesan,Meat Lasagna,28
+California Roll,Steak Burrito,28
+Cheeseburger,Steak Tacos,28
+Chicken Torta,Eggplant Parmesan,28
+Hamburger,Steak Tacos,27
+Meat Lasagna,Steak Torta,27
+Chicken Parmesan,Eggplant Parmesan,27
+Cheese Lasagna,Hamburger,27
+Chips & Guacamole,Edamame,27
+Meat Lasagna,Salmon Roll,27
+Cheese Quesadillas,Hamburger,27
+Hamburger,Shrimp Scampi,27
+Orange Chicken,Steak Burrito,27
+Cheese Quesadillas,Chips & Salsa,27
+Hamburger,Hot Dog,27
+California Roll,Orange Chicken,27
+Chips & Guacamole,French Fries,27
+Mushroom Ravioli,Spaghetti,27
+French Fries,Meat Lasagna,27
+Cheese Quesadillas,Steak Torta,27
+Chicken Torta,French Fries,27
+Chips & Salsa,Pork Ramen,27
+Chips & Guacamole,Steak Torta,26
+Meat Lasagna,Orange Chicken,26
+Cheese Lasagna,Eggplant Parmesan,26
+Chicken Parmesan,Pork Ramen,26
+French Fries,Shrimp Scampi,26
+Chicken Burrito,Chicken Parmesan,26
+Chips & Salsa,Shrimp Scampi,26
+Chicken Tacos,Hamburger,26
+Hot Dog,Mac & Cheese,26
+French Fries,Steak Burrito,26
+Potstickers,Steak Torta,25
+Chicken Parmesan,Mushroom Ravioli,25
+California Roll,Chicken Parmesan,25
+Cheese Quesadillas,Korean Beef Bowl,25
+California Roll,Salmon Roll,25
+Chicken Torta,Mac & Cheese,25
+Chicken Burrito,Fettuccine Alfredo,25
+Meat Lasagna,Tofu Pad Thai,25
+French Fries,Potstickers,25
+Spaghetti & Meatballs,Steak Tacos,25
+Fettuccine Alfredo,Orange Chicken,25
+Cheese Lasagna,French Fries,25
+Shrimp Scampi,Tofu Pad Thai,25
+Chicken Torta,Spaghetti,25
+Eggplant Parmesan,Hot Dog,25
+Chips & Salsa,Veggie Burger,25
+Mac & Cheese,Steak Burrito,24
+Chicken Parmesan,Meat Lasagna,24
+Chicken Torta,Salmon Roll,24
+Cheese Quesadillas,Mac & Cheese,24
+Korean Beef Bowl,Potstickers,24
+Eggplant Parmesan,Veggie Burger,24
+Spaghetti & Meatballs,Veggie Burger,24
+Eggplant Parmesan,Steak Burrito,24
+Cheese Quesadillas,Chicken Burrito,23
+Edamame,Hot Dog,23
+Hot Dog,Steak Torta,23
+Chicken Torta,Steak Burrito,23
+California Roll,Spaghetti,23
+Fettuccine Alfredo,Hamburger,23
+Cheeseburger,Shrimp Scampi,23
+French Fries,Steak Tacos,23
+Hot Dog,Spaghetti & Meatballs,23
+Cheese Lasagna,Korean Beef Bowl,23
+French Fries,Veggie Burger,23
+Mac & Cheese,Shrimp Scampi,23
+Eggplant Parmesan,Mushroom Ravioli,23
+Chicken Parmesan,Veggie Burger,23
+Chicken Parmesan,Chips & Salsa,23
+Edamame,Meat Lasagna,23
+Chicken Torta,Orange Chicken,22
+Cheeseburger,Chips & Guacamole,22
+Chips & Guacamole,Hamburger,22
+Orange Chicken,Steak Tacos,22
+Korean Beef Bowl,Veggie Burger,22
+Eggplant Parmesan,Fettuccine Alfredo,22
+Cheeseburger,Potstickers,22
+Chips & Salsa,Meat Lasagna,22
+Chips & Salsa,Steak Tacos,22
+Steak Torta,Veggie Burger,22
+Chicken Burrito,Salmon Roll,22
+Chicken Torta,Chips & Salsa,22
+Hot Dog,Mushroom Ravioli,22
+Fettuccine Alfredo,Pork Ramen,22
+Shrimp Scampi,Spaghetti & Meatballs,22
+Mac & Cheese,Veggie Burger,22
+Steak Burrito,Veggie Burger,22
+Orange Chicken,Salmon Roll,22
+Chicken Burrito,Meat Lasagna,22
+Eggplant Parmesan,Pork Ramen,21
+Cheese Quesadillas,Cheeseburger,21
+Salmon Roll,Steak Burrito,21
+Potstickers,Tofu Pad Thai,21
+Chicken Torta,Mushroom Ravioli,21
+Shrimp Scampi,Spaghetti,21
+Chicken Parmesan,Chicken Torta,21
+Edamame,Potstickers,21
+California Roll,Mushroom Ravioli,21
+Cheese Lasagna,Cheeseburger,21
+Chicken Parmesan,Hot Dog,21
+Korean Beef Bowl,Steak Tacos,21
+Chicken Parmesan,Salmon Roll,21
+Cheeseburger,Fettuccine Alfredo,21
+Chips & Guacamole,Chips & Salsa,21
+Mushroom Ravioli,Shrimp Scampi,20
+Cheese Lasagna,Chicken Burrito,20
+Potstickers,Spaghetti,20
+Chicken Burrito,Shrimp Scampi,20
+California Roll,Hot Dog,20
+Meat Lasagna,Pork Ramen,20
+Cheese Lasagna,Spaghetti & Meatballs,20
+Chicken Torta,Shrimp Scampi,20
+Mushroom Ravioli,Steak Tacos,20
+Chips & Salsa,Hot Dog,20
+Mac & Cheese,Steak Tacos,20
+Cheese Lasagna,Edamame,20
+Fettuccine Alfredo,Mac & Cheese,20
+Fettuccine Alfredo,Tofu Pad Thai,20
+Orange Chicken,Veggie Burger,20
+Chips & Guacamole,Spaghetti,20
+Shrimp Scampi,Steak Torta,20
+Chicken Parmesan,Fettuccine Alfredo,20
+Korean Beef Bowl,Shrimp Scampi,19
+Cheese Lasagna,Tofu Pad Thai,19
+Cheese Quesadillas,Mushroom Ravioli,19
+Potstickers,Spaghetti & Meatballs,19
+Chicken Burrito,Potstickers,19
+Cheese Quesadillas,Orange Chicken,19
+Chicken Burrito,Veggie Burger,19
+Chips & Salsa,Salmon Roll,19
+Chips & Guacamole,Orange Chicken,19
+Fettuccine Alfredo,Spaghetti,19
+Mushroom Ravioli,Veggie Burger,19
+Chicken Torta,Hot Dog,19
+Fettuccine Alfredo,Spaghetti & Meatballs,19
+Cheese Quesadillas,Chips & Guacamole,19
+Pork Ramen,Steak Burrito,19
+Cheese Quesadillas,Salmon Roll,19
+Chips & Guacamole,Spaghetti & Meatballs,19
+Cheese Lasagna,Spaghetti,18
+Meat Lasagna,Steak Burrito,18
+Cheese Quesadillas,Steak Burrito,18
+Chips & Guacamole,Shrimp Scampi,18
+Meat Lasagna,Mushroom Ravioli,18
+Chicken Burrito,Steak Tacos,18
+Cheese Quesadillas,Spaghetti & Meatballs,18
+Cheese Quesadillas,Eggplant Parmesan,18
+Chips & Guacamole,Tofu Pad Thai,18
+Chips & Salsa,Potstickers,17
+Meat Lasagna,Spaghetti,17
+California Roll,Meat Lasagna,17
+Mushroom Ravioli,Salmon Roll,17
+California Roll,Fettuccine Alfredo,17
+Cheese Quesadillas,Meat Lasagna,17
+Potstickers,Salmon Roll,17
+Chicken Parmesan,Potstickers,17
+Orange Chicken,Shrimp Scampi,17
+Chicken Parmesan,Shrimp Scampi,17
+Chicken Torta,Pork Ramen,17
+Spaghetti,Veggie Burger,17
+Fettuccine Alfredo,Steak Torta,17
+Pork Ramen,Steak Tacos,17
+Chicken Tacos,Tofu Pad Thai,17
+Orange Chicken,Potstickers,17
+Chips & Guacamole,Steak Burrito,17
+Chips & Guacamole,Korean Beef Bowl,16
+Steak Tacos,Steak Torta,16
+Cheese Lasagna,Mushroom Ravioli,16
+Mushroom Ravioli,Steak Burrito,16
+Potstickers,Steak Tacos,16
+Cheese Quesadillas,Spaghetti,16
+Fettuccine Alfredo,Veggie Burger,16
+California Roll,Cheese Quesadillas,16
+California Roll,Cheese Lasagna,16
+Chicken Torta,Veggie Burger,16
+Hot Dog,Veggie Burger,16
+Cheese Lasagna,Steak Torta,16
+Chicken Torta,Potstickers,16
+Chips & Guacamole,Salmon Roll,16
+California Roll,Chips & Guacamole,15
+Chicken Torta,Steak Tacos,15
+Chicken Tacos,French Fries,15
+Mushroom Ravioli,Potstickers,15
+Chicken Torta,Chips & Guacamole,15
+Chips & Guacamole,Mac & Cheese,15
+Cheese Lasagna,Mac & Cheese,15
+Meat Lasagna,Shrimp Scampi,15
+Hot Dog,Steak Burrito,15
+Eggplant Parmesan,Shrimp Scampi,15
+California Roll,Steak Tacos,15
+Spaghetti,Steak Tacos,15
+Chicken Tacos,Spaghetti & Meatballs,15
+Eggplant Parmesan,Potstickers,15
+Fettuccine Alfredo,Mushroom Ravioli,15
+Cheese Quesadillas,Pork Ramen,15
+Chicken Tacos,Steak Torta,15
+Eggplant Parmesan,Steak Tacos,15
+Chicken Parmesan,Steak Tacos,15
+Hot Dog,Shrimp Scampi,14
+Steak Tacos,Tofu Pad Thai,14
+California Roll,Shrimp Scampi,14
+Cheese Lasagna,Veggie Burger,14
+Cheese Lasagna,Chicken Torta,14
+Chips & Guacamole,Meat Lasagna,14
+Chips & Guacamole,Mushroom Ravioli,14
+Fettuccine Alfredo,Steak Burrito,14
+Cheese Lasagna,Potstickers,14
+Pork Ramen,Salmon Roll,14
+Chicken Burrito,Chips & Guacamole,14
+Fettuccine Alfredo,Meat Lasagna,14
+Hot Dog,Salmon Roll,14
+Hot Dog,Spaghetti,13
+Chicken Tacos,Spaghetti,13
+Cheese Lasagna,Pork Ramen,13
+Cheese Lasagna,Chips & Salsa,13
+Pork Ramen,Veggie Burger,13
+California Roll,Potstickers,13
+Fettuccine Alfredo,Steak Tacos,13
+Salmon Roll,Shrimp Scampi,13
+Chicken Parmesan,Chips & Guacamole,13
+Cheese Quesadillas,Chicken Torta,13
+Mac & Cheese,Potstickers,13
+Shrimp Scampi,Steak Burrito,13
+Chicken Tacos,Korean Beef Bowl,13
+Cheese Lasagna,Chicken Parmesan,13
+Cheese Lasagna,Salmon Roll,13
+Fettuccine Alfredo,Salmon Roll,13
+Potstickers,Steak Burrito,13
+Chicken Tacos,Orange Chicken,13
+Hot Dog,Potstickers,12
+Shrimp Scampi,Steak Tacos,12
+Steak Burrito,Steak Tacos,12
+California Roll,Veggie Burger,12
+Cheese Quesadillas,Chicken Parmesan,12
+Cheese Lasagna,Orange Chicken,12
+Hot Dog,Steak Tacos,12
+Cheese Quesadillas,Hot Dog,12
+Chips & Guacamole,Pork Ramen,12
+Chicken Tacos,Chips & Guacamole,12
+Chips & Guacamole,Fettuccine Alfredo,12
+Salmon Roll,Veggie Burger,12
+Chicken Torta,Meat Lasagna,12
+Cheese Quesadillas,Veggie Burger,12
+Steak Tacos,Veggie Burger,11
+Cheese Lasagna,Steak Burrito,11
+Chicken Tacos,Steak Burrito,11
+Pork Ramen,Shrimp Scampi,11
+Fettuccine Alfredo,Hot Dog,11
+Chips & Guacamole,Eggplant Parmesan,11
+Chicken Tacos,Mac & Cheese,11
+Chicken Tacos,Eggplant Parmesan,11
+Shrimp Scampi,Veggie Burger,10
+Cheese Quesadillas,Steak Tacos,10
+Cheese Quesadillas,Potstickers,10
+Chips & Guacamole,Steak Tacos,10
+Chicken Tacos,Meat Lasagna,10
+Cheese Lasagna,Fettuccine Alfredo,10
+Salmon Roll,Steak Tacos,10
+Meat Lasagna,Steak Tacos,10
+Fettuccine Alfredo,Shrimp Scampi,10
+Hot Dog,Meat Lasagna,10
+Cheese Quesadillas,Shrimp Scampi,9
+Chips & Guacamole,Veggie Burger,9
+Chicken Burrito,Chicken Tacos,9
+Cheese Lasagna,Chips & Guacamole,9
+Hot Dog,Pork Ramen,9
+Chicken Torta,Fettuccine Alfredo,9
+Cheeseburger,Chicken Tacos,8
+Chicken Tacos,Chips & Salsa,8
+Cheese Lasagna,Chicken Tacos,8
+Fettuccine Alfredo,Potstickers,8
+Chicken Tacos,Pork Ramen,8
+Chicken Tacos,Edamame,8
+Meat Lasagna,Veggie Burger,8
+Pork Ramen,Potstickers,8
+Cheese Lasagna,Meat Lasagna,8
+Cheese Quesadillas,Fettuccine Alfredo,7
+Cheese Lasagna,Steak Tacos,7
+Chicken Tacos,Mushroom Ravioli,7
+Cheese Lasagna,Shrimp Scampi,7
+Cheese Lasagna,Hot Dog,7
+Meat Lasagna,Potstickers,7
+Chicken Tacos,Shrimp Scampi,7
+Potstickers,Shrimp Scampi,7
+Cheese Lasagna,Cheese Quesadillas,7
+Cheese Quesadillas,Chicken Tacos,6
+Chicken Tacos,Potstickers,6
+Chicken Tacos,Salmon Roll,6
+Chips & Guacamole,Hot Dog,6
+California Roll,Chicken Tacos,6
+Chicken Parmesan,Chicken Tacos,6
+Chips & Guacamole,Potstickers,5
+Potstickers,Veggie Burger,5
+Chicken Tacos,Fettuccine Alfredo,5
+Chicken Tacos,Chicken Torta,4
+Chicken Tacos,Veggie Burger,3
+Chicken Tacos,Steak Tacos,3
+Chicken Tacos,Hot Dog,1

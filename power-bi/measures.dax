@@ -1,0 +1,7 @@
+Sales = SUM('Restaurant Sales'[revenue])
+
+Matched Orders = DISTINCTCOUNT('Restaurant Sales'[order_id])
+
+Items Sold = COUNTROWS('Restaurant Sales')
+
+Sales per Matched Order = DIVIDE([Sales], [Matched Orders])

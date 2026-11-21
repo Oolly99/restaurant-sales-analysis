@@ -1,0 +1,5245 @@
+{
+  "surface": "dashboard",
+  "title": "Restaurant sales & menu performance",
+  "buildStatus": "complete",
+  "queries": {
+    "totals": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "sales": 159217.9,
+          "orders": 5343,
+          "items": 12097,
+          "average": 29.8
+        },
+        {
+          "scope": "All|American",
+          "sales": 28237.75,
+          "orders": 2152,
+          "items": 2734,
+          "average": 13.12
+        },
+        {
+          "scope": "All|Asian",
+          "sales": 46720.65,
+          "orders": 2635,
+          "items": 3470,
+          "average": 17.73
+        },
+        {
+          "scope": "All|Italian",
+          "sales": 49462.7,
+          "orders": 2292,
+          "items": 2948,
+          "average": 21.58
+        },
+        {
+          "scope": "All|Mexican",
+          "sales": 34796.8,
+          "orders": 2266,
+          "items": 2945,
+          "average": 15.36
+        },
+        {
+          "scope": "Jan|All",
+          "sales": 53816.95,
+          "orders": 1835,
+          "items": 4104,
+          "average": 29.33
+        },
+        {
+          "scope": "Jan|American",
+          "sales": 9284.85,
+          "orders": 714,
+          "items": 894,
+          "average": 13
+        },
+        {
+          "scope": "Jan|Asian",
+          "sales": 15588.5,
+          "orders": 892,
+          "items": 1186,
+          "average": 17.48
+        },
+        {
+          "scope": "Jan|Italian",
+          "sales": 16727.75,
+          "orders": 774,
+          "items": 998,
+          "average": 21.61
+        },
+        {
+          "scope": "Jan|Mexican",
+          "sales": 12215.85,
+          "orders": 779,
+          "items": 1026,
+          "average": 15.68
+        },
+        {
+          "scope": "Feb|All",
+          "sales": 50790.35,
+          "orders": 1675,
+          "items": 3851,
+          "average": 30.32
+        },
+        {
+          "scope": "Feb|American",
+          "sales": 8947.15,
+          "orders": 674,
+          "items": 859,
+          "average": 13.27
+        },
+        {
+          "scope": "Feb|Asian",
+          "sales": 15075.7,
+          "orders": 845,
+          "items": 1117,
+          "average": 17.84
+        },
+        {
+          "scope": "Feb|Italian",
+          "sales": 15545.05,
+          "orders": 723,
+          "items": 927,
+          "average": 21.5
+        },
+        {
+          "scope": "Feb|Mexican",
+          "sales": 11222.45,
+          "orders": 720,
+          "items": 948,
+          "average": 15.59
+        },
+        {
+          "scope": "Mar|All",
+          "sales": 54610.6,
+          "orders": 1833,
+          "items": 4142,
+          "average": 29.79
+        },
+        {
+          "scope": "Mar|American",
+          "sales": 10005.75,
+          "orders": 764,
+          "items": 981,
+          "average": 13.1
+        },
+        {
+          "scope": "Mar|Asian",
+          "sales": 16056.45,
+          "orders": 898,
+          "items": 1167,
+          "average": 17.88
+        },
+        {
+          "scope": "Mar|Italian",
+          "sales": 17189.9,
+          "orders": 795,
+          "items": 1023,
+          "average": 21.62
+        },
+        {
+          "scope": "Mar|Mexican",
+          "sales": 11358.5,
+          "orders": 767,
+          "items": 971,
+          "average": 14.81
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    },
+    "monthly": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "name": "Jan",
+          "sales": 53816.95,
+          "orders": 1835,
+          "items": 4104
+        },
+        {
+          "scope": "All|All",
+          "name": "Feb",
+          "sales": 50790.35,
+          "orders": 1675,
+          "items": 3851
+        },
+        {
+          "scope": "All|All",
+          "name": "Mar",
+          "sales": 54610.6,
+          "orders": 1833,
+          "items": 4142
+        },
+        {
+          "scope": "All|American",
+          "name": "Jan",
+          "sales": 9284.85,
+          "orders": 714,
+          "items": 894
+        },
+        {
+          "scope": "All|American",
+          "name": "Feb",
+          "sales": 8947.15,
+          "orders": 674,
+          "items": 859
+        },
+        {
+          "scope": "All|American",
+          "name": "Mar",
+          "sales": 10005.75,
+          "orders": 764,
+          "items": 981
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Jan",
+          "sales": 15588.5,
+          "orders": 892,
+          "items": 1186
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Feb",
+          "sales": 15075.7,
+          "orders": 845,
+          "items": 1117
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Mar",
+          "sales": 16056.45,
+          "orders": 898,
+          "items": 1167
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Jan",
+          "sales": 16727.75,
+          "orders": 774,
+          "items": 998
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Feb",
+          "sales": 15545.05,
+          "orders": 723,
+          "items": 927
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Mar",
+          "sales": 17189.9,
+          "orders": 795,
+          "items": 1023
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Jan",
+          "sales": 12215.85,
+          "orders": 779,
+          "items": 1026
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Feb",
+          "sales": 11222.45,
+          "orders": 720,
+          "items": 948
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Mar",
+          "sales": 11358.5,
+          "orders": 767,
+          "items": 971
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Jan",
+          "sales": 53816.95,
+          "orders": 1835,
+          "items": 4104
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Jan",
+          "sales": 9284.85,
+          "orders": 714,
+          "items": 894
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Jan",
+          "sales": 15588.5,
+          "orders": 892,
+          "items": 1186
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Jan",
+          "sales": 16727.75,
+          "orders": 774,
+          "items": 998
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Jan",
+          "sales": 12215.85,
+          "orders": 779,
+          "items": 1026
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Feb",
+          "sales": 50790.35,
+          "orders": 1675,
+          "items": 3851
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Feb",
+          "sales": 8947.15,
+          "orders": 674,
+          "items": 859
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Feb",
+          "sales": 15075.7,
+          "orders": 845,
+          "items": 1117
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Feb",
+          "sales": 15545.05,
+          "orders": 723,
+          "items": 927
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Feb",
+          "sales": 11222.45,
+          "orders": 720,
+          "items": 948
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Mar",
+          "sales": 54610.6,
+          "orders": 1833,
+          "items": 4142
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Mar",
+          "sales": 10005.75,
+          "orders": 764,
+          "items": 981
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Mar",
+          "sales": 16056.45,
+          "orders": 898,
+          "items": 1167
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Mar",
+          "sales": 17189.9,
+          "orders": 795,
+          "items": 1023
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Mar",
+          "sales": 11358.5,
+          "orders": 767,
+          "items": 971
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    },
+    "categories": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "name": "American",
+          "sales": 28237.75,
+          "orders": 2152,
+          "items": 2734
+        },
+        {
+          "scope": "All|All",
+          "name": "Asian",
+          "sales": 46720.65,
+          "orders": 2635,
+          "items": 3470
+        },
+        {
+          "scope": "All|All",
+          "name": "Italian",
+          "sales": 49462.7,
+          "orders": 2292,
+          "items": 2948
+        },
+        {
+          "scope": "All|All",
+          "name": "Mexican",
+          "sales": 34796.8,
+          "orders": 2266,
+          "items": 2945
+        },
+        {
+          "scope": "All|American",
+          "name": "American",
+          "sales": 28237.75,
+          "orders": 2152,
+          "items": 2734
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Asian",
+          "sales": 46720.65,
+          "orders": 2635,
+          "items": 3470
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Italian",
+          "sales": 49462.7,
+          "orders": 2292,
+          "items": 2948
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Mexican",
+          "sales": 34796.8,
+          "orders": 2266,
+          "items": 2945
+        },
+        {
+          "scope": "Jan|All",
+          "name": "American",
+          "sales": 9284.85,
+          "orders": 714,
+          "items": 894
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Asian",
+          "sales": 15588.5,
+          "orders": 892,
+          "items": 1186
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Italian",
+          "sales": 16727.75,
+          "orders": 774,
+          "items": 998
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Mexican",
+          "sales": 12215.85,
+          "orders": 779,
+          "items": 1026
+        },
+        {
+          "scope": "Jan|American",
+          "name": "American",
+          "sales": 9284.85,
+          "orders": 714,
+          "items": 894
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Asian",
+          "sales": 15588.5,
+          "orders": 892,
+          "items": 1186
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Italian",
+          "sales": 16727.75,
+          "orders": 774,
+          "items": 998
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Mexican",
+          "sales": 12215.85,
+          "orders": 779,
+          "items": 1026
+        },
+        {
+          "scope": "Feb|All",
+          "name": "American",
+          "sales": 8947.15,
+          "orders": 674,
+          "items": 859
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Asian",
+          "sales": 15075.7,
+          "orders": 845,
+          "items": 1117
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Italian",
+          "sales": 15545.05,
+          "orders": 723,
+          "items": 927
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Mexican",
+          "sales": 11222.45,
+          "orders": 720,
+          "items": 948
+        },
+        {
+          "scope": "Feb|American",
+          "name": "American",
+          "sales": 8947.15,
+          "orders": 674,
+          "items": 859
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Asian",
+          "sales": 15075.7,
+          "orders": 845,
+          "items": 1117
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Italian",
+          "sales": 15545.05,
+          "orders": 723,
+          "items": 927
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Mexican",
+          "sales": 11222.45,
+          "orders": 720,
+          "items": 948
+        },
+        {
+          "scope": "Mar|All",
+          "name": "American",
+          "sales": 10005.75,
+          "orders": 764,
+          "items": 981
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Asian",
+          "sales": 16056.45,
+          "orders": 898,
+          "items": 1167
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Italian",
+          "sales": 17189.9,
+          "orders": 795,
+          "items": 1023
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Mexican",
+          "sales": 11358.5,
+          "orders": 767,
+          "items": 971
+        },
+        {
+          "scope": "Mar|American",
+          "name": "American",
+          "sales": 10005.75,
+          "orders": 764,
+          "items": 981
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Asian",
+          "sales": 16056.45,
+          "orders": 898,
+          "items": 1167
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Italian",
+          "sales": 17189.9,
+          "orders": 795,
+          "items": 1023
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Mexican",
+          "sales": 11358.5,
+          "orders": 767,
+          "items": 971
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    },
+    "weekday": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "name": "Mon",
+          "sales": 26007.45,
+          "orders": 881,
+          "items": 1988
+        },
+        {
+          "scope": "All|All",
+          "name": "Tue",
+          "sales": 23356,
+          "orders": 759,
+          "items": 1760
+        },
+        {
+          "scope": "All|All",
+          "name": "Wed",
+          "sales": 19902.3,
+          "orders": 680,
+          "items": 1522
+        },
+        {
+          "scope": "All|All",
+          "name": "Thu",
+          "sales": 21846.85,
+          "orders": 739,
+          "items": 1667
+        },
+        {
+          "scope": "All|All",
+          "name": "Fri",
+          "sales": 23707.95,
+          "orders": 784,
+          "items": 1802
+        },
+        {
+          "scope": "All|All",
+          "name": "Sat",
+          "sales": 21170.9,
+          "orders": 708,
+          "items": 1599
+        },
+        {
+          "scope": "All|All",
+          "name": "Sun",
+          "sales": 23226.45,
+          "orders": 792,
+          "items": 1759
+        },
+        {
+          "scope": "All|American",
+          "name": "Mon",
+          "sales": 4552.95,
+          "orders": 363,
+          "items": 436
+        },
+        {
+          "scope": "All|American",
+          "name": "Tue",
+          "sales": 4099.15,
+          "orders": 299,
+          "items": 392
+        },
+        {
+          "scope": "All|American",
+          "name": "Wed",
+          "sales": 3800.6,
+          "orders": 289,
+          "items": 363
+        },
+        {
+          "scope": "All|American",
+          "name": "Thu",
+          "sales": 4107.9,
+          "orders": 302,
+          "items": 405
+        },
+        {
+          "scope": "All|American",
+          "name": "Fri",
+          "sales": 3934.5,
+          "orders": 310,
+          "items": 388
+        },
+        {
+          "scope": "All|American",
+          "name": "Sat",
+          "sales": 3823.15,
+          "orders": 287,
+          "items": 372
+        },
+        {
+          "scope": "All|American",
+          "name": "Sun",
+          "sales": 3919.5,
+          "orders": 302,
+          "items": 378
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Mon",
+          "sales": 7828.45,
+          "orders": 446,
+          "items": 597
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Tue",
+          "sales": 6491.6,
+          "orders": 370,
+          "items": 475
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Wed",
+          "sales": 5762.2,
+          "orders": 351,
+          "items": 441
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Thu",
+          "sales": 6741.9,
+          "orders": 371,
+          "items": 496
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Fri",
+          "sales": 6979.45,
+          "orders": 377,
+          "items": 509
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Sat",
+          "sales": 6154,
+          "orders": 342,
+          "items": 449
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Sun",
+          "sales": 6763.05,
+          "orders": 378,
+          "items": 503
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Mon",
+          "sales": 8183.85,
+          "orders": 382,
+          "items": 486
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Tue",
+          "sales": 7589.95,
+          "orders": 345,
+          "items": 452
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Wed",
+          "sales": 6009.35,
+          "orders": 274,
+          "items": 357
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Thu",
+          "sales": 6681.4,
+          "orders": 313,
+          "items": 400
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Fri",
+          "sales": 7135.65,
+          "orders": 326,
+          "items": 426
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Sat",
+          "sales": 6680.75,
+          "orders": 321,
+          "items": 399
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Sun",
+          "sales": 7181.75,
+          "orders": 331,
+          "items": 428
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Mon",
+          "sales": 5442.2,
+          "orders": 368,
+          "items": 469
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Tue",
+          "sales": 5175.3,
+          "orders": 332,
+          "items": 441
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Wed",
+          "sales": 4330.15,
+          "orders": 276,
+          "items": 361
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Thu",
+          "sales": 4315.65,
+          "orders": 287,
+          "items": 366
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Fri",
+          "sales": 5658.35,
+          "orders": 367,
+          "items": 479
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Sat",
+          "sales": 4513,
+          "orders": 292,
+          "items": 379
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Sun",
+          "sales": 5362.15,
+          "orders": 344,
+          "items": 450
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Mon",
+          "sales": 9373.25,
+          "orders": 329,
+          "items": 716
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Tue",
+          "sales": 9208.3,
+          "orders": 300,
+          "items": 695
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Wed",
+          "sales": 5714.8,
+          "orders": 198,
+          "items": 439
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Thu",
+          "sales": 6373.95,
+          "orders": 219,
+          "items": 484
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Fri",
+          "sales": 7118.2,
+          "orders": 241,
+          "items": 541
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Sat",
+          "sales": 6734.05,
+          "orders": 221,
+          "items": 513
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Sun",
+          "sales": 9294.4,
+          "orders": 327,
+          "items": 716
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Mon",
+          "sales": 1563.9,
+          "orders": 126,
+          "items": 149
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Tue",
+          "sales": 1604.3,
+          "orders": 116,
+          "items": 152
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Wed",
+          "sales": 1083.75,
+          "orders": 81,
+          "items": 98
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Thu",
+          "sales": 1130.35,
+          "orders": 86,
+          "items": 113
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Fri",
+          "sales": 1105.35,
+          "orders": 88,
+          "items": 110
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Sat",
+          "sales": 1176.6,
+          "orders": 88,
+          "items": 113
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Sun",
+          "sales": 1620.6,
+          "orders": 129,
+          "items": 159
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Mon",
+          "sales": 2811.05,
+          "orders": 161,
+          "items": 216
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Tue",
+          "sales": 2594,
+          "orders": 152,
+          "items": 193
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Wed",
+          "sales": 1438,
+          "orders": 96,
+          "items": 119
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Thu",
+          "sales": 2041.45,
+          "orders": 110,
+          "items": 154
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Fri",
+          "sales": 2241.2,
+          "orders": 114,
+          "items": 162
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Sat",
+          "sales": 1921.2,
+          "orders": 110,
+          "items": 146
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Sun",
+          "sales": 2541.6,
+          "orders": 149,
+          "items": 196
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Mon",
+          "sales": 3032.2,
+          "orders": 141,
+          "items": 181
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Tue",
+          "sales": 2796.45,
+          "orders": 134,
+          "items": 166
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Wed",
+          "sales": 1774.4,
+          "orders": 80,
+          "items": 105
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Thu",
+          "sales": 1952.6,
+          "orders": 92,
+          "items": 116
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Fri",
+          "sales": 2087.4,
+          "orders": 97,
+          "items": 126
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Sat",
+          "sales": 2019,
+          "orders": 96,
+          "items": 120
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Sun",
+          "sales": 3065.7,
+          "orders": 134,
+          "items": 184
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Mon",
+          "sales": 1966.1,
+          "orders": 137,
+          "items": 170
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Tue",
+          "sales": 2213.55,
+          "orders": 134,
+          "items": 184
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Wed",
+          "sales": 1418.65,
+          "orders": 90,
+          "items": 117
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Thu",
+          "sales": 1249.55,
+          "orders": 81,
+          "items": 101
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Fri",
+          "sales": 1684.25,
+          "orders": 104,
+          "items": 143
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Sat",
+          "sales": 1617.25,
+          "orders": 100,
+          "items": 134
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Sun",
+          "sales": 2066.5,
+          "orders": 133,
+          "items": 177
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Mon",
+          "sales": 8416.05,
+          "orders": 278,
+          "items": 646
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Tue",
+          "sales": 7242.2,
+          "orders": 231,
+          "items": 540
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Wed",
+          "sales": 6828.2,
+          "orders": 231,
+          "items": 526
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Thu",
+          "sales": 6764.8,
+          "orders": 219,
+          "items": 514
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Fri",
+          "sales": 6870.15,
+          "orders": 239,
+          "items": 528
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Sat",
+          "sales": 7758.1,
+          "orders": 249,
+          "items": 582
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Sun",
+          "sales": 6910.85,
+          "orders": 228,
+          "items": 515
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Mon",
+          "sales": 1614.7,
+          "orders": 123,
+          "items": 149
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Tue",
+          "sales": 1316.55,
+          "orders": 96,
+          "items": 127
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Wed",
+          "sales": 1371.55,
+          "orders": 105,
+          "items": 133
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Thu",
+          "sales": 1180.75,
+          "orders": 88,
+          "items": 116
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Fri",
+          "sales": 1131.55,
+          "orders": 87,
+          "items": 110
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Sat",
+          "sales": 1287.95,
+          "orders": 95,
+          "items": 126
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Sun",
+          "sales": 1044.1,
+          "orders": 80,
+          "items": 98
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Mon",
+          "sales": 2488.7,
+          "orders": 142,
+          "items": 192
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Tue",
+          "sales": 1939.15,
+          "orders": 104,
+          "items": 135
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Wed",
+          "sales": 2056.25,
+          "orders": 117,
+          "items": 152
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Thu",
+          "sales": 2158.7,
+          "orders": 123,
+          "items": 159
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Fri",
+          "sales": 1938.8,
+          "orders": 113,
+          "items": 148
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Sat",
+          "sales": 2317.3,
+          "orders": 125,
+          "items": 169
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Sun",
+          "sales": 2176.8,
+          "orders": 121,
+          "items": 162
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Mon",
+          "sales": 2344.85,
+          "orders": 114,
+          "items": 139
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Tue",
+          "sales": 2553.6,
+          "orders": 112,
+          "items": 154
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Wed",
+          "sales": 1827.7,
+          "orders": 86,
+          "items": 108
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Thu",
+          "sales": 2110.55,
+          "orders": 98,
+          "items": 126
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Fri",
+          "sales": 2027.25,
+          "orders": 98,
+          "items": 121
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Sat",
+          "sales": 2596.25,
+          "orders": 119,
+          "items": 155
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Sun",
+          "sales": 2084.85,
+          "orders": 96,
+          "items": 124
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Mon",
+          "sales": 1967.8,
+          "orders": 125,
+          "items": 166
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Tue",
+          "sales": 1432.9,
+          "orders": 91,
+          "items": 124
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Wed",
+          "sales": 1572.7,
+          "orders": 93,
+          "items": 133
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Thu",
+          "sales": 1314.8,
+          "orders": 88,
+          "items": 113
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Fri",
+          "sales": 1772.55,
+          "orders": 116,
+          "items": 149
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Sat",
+          "sales": 1556.6,
+          "orders": 104,
+          "items": 132
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Sun",
+          "sales": 1605.1,
+          "orders": 103,
+          "items": 131
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Mon",
+          "sales": 8218.15,
+          "orders": 274,
+          "items": 626
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Tue",
+          "sales": 6905.5,
+          "orders": 228,
+          "items": 525
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Wed",
+          "sales": 7359.3,
+          "orders": 251,
+          "items": 557
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Thu",
+          "sales": 8708.1,
+          "orders": 301,
+          "items": 669
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Fri",
+          "sales": 9719.6,
+          "orders": 304,
+          "items": 733
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Sat",
+          "sales": 6678.75,
+          "orders": 238,
+          "items": 504
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Sun",
+          "sales": 7021.2,
+          "orders": 237,
+          "items": 528
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Mon",
+          "sales": 1374.35,
+          "orders": 114,
+          "items": 138
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Tue",
+          "sales": 1178.3,
+          "orders": 87,
+          "items": 113
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Wed",
+          "sales": 1345.3,
+          "orders": 103,
+          "items": 132
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Thu",
+          "sales": 1796.8,
+          "orders": 128,
+          "items": 176
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Fri",
+          "sales": 1697.6,
+          "orders": 135,
+          "items": 168
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Sat",
+          "sales": 1358.6,
+          "orders": 104,
+          "items": 133
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Sun",
+          "sales": 1254.8,
+          "orders": 93,
+          "items": 121
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Mon",
+          "sales": 2528.7,
+          "orders": 143,
+          "items": 189
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Tue",
+          "sales": 1958.45,
+          "orders": 114,
+          "items": 147
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Wed",
+          "sales": 2267.95,
+          "orders": 138,
+          "items": 170
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Thu",
+          "sales": 2541.75,
+          "orders": 138,
+          "items": 183
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Fri",
+          "sales": 2799.45,
+          "orders": 150,
+          "items": 199
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Sat",
+          "sales": 1915.5,
+          "orders": 107,
+          "items": 134
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Sun",
+          "sales": 2044.65,
+          "orders": 108,
+          "items": 145
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Mon",
+          "sales": 2806.8,
+          "orders": 127,
+          "items": 166
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Tue",
+          "sales": 2239.9,
+          "orders": 99,
+          "items": 132
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Wed",
+          "sales": 2407.25,
+          "orders": 108,
+          "items": 144
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Thu",
+          "sales": 2618.25,
+          "orders": 123,
+          "items": 158
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Fri",
+          "sales": 3021,
+          "orders": 131,
+          "items": 179
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Sat",
+          "sales": 2065.5,
+          "orders": 106,
+          "items": 124
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Sun",
+          "sales": 2031.2,
+          "orders": 101,
+          "items": 120
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Mon",
+          "sales": 1508.3,
+          "orders": 106,
+          "items": 133
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Tue",
+          "sales": 1528.85,
+          "orders": 107,
+          "items": 133
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Wed",
+          "sales": 1338.8,
+          "orders": 93,
+          "items": 111
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Thu",
+          "sales": 1751.3,
+          "orders": 118,
+          "items": 152
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Fri",
+          "sales": 2201.55,
+          "orders": 147,
+          "items": 187
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Sat",
+          "sales": 1339.15,
+          "orders": 88,
+          "items": 113
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Sun",
+          "sales": 1690.55,
+          "orders": 108,
+          "items": 142
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    },
+    "hourly": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "name": "10",
+          "sales": 63.35,
+          "orders": 2,
+          "items": 5
+        },
+        {
+          "scope": "All|All",
+          "name": "11",
+          "sales": 8122.5,
+          "orders": 286,
+          "items": 624
+        },
+        {
+          "scope": "All|All",
+          "name": "12",
+          "sales": 21718.4,
+          "orders": 644,
+          "items": 1659
+        },
+        {
+          "scope": "All|All",
+          "name": "13",
+          "sales": 20640.25,
+          "orders": 590,
+          "items": 1558
+        },
+        {
+          "scope": "All|All",
+          "name": "14",
+          "sales": 12615.7,
+          "orders": 423,
+          "items": 956
+        },
+        {
+          "scope": "All|All",
+          "name": "15",
+          "sales": 9803.9,
+          "orders": 354,
+          "items": 743
+        },
+        {
+          "scope": "All|All",
+          "name": "16",
+          "sales": 13711.65,
+          "orders": 479,
+          "items": 1035
+        },
+        {
+          "scope": "All|All",
+          "name": "17",
+          "sales": 17869.5,
+          "orders": 618,
+          "items": 1355
+        },
+        {
+          "scope": "All|All",
+          "name": "18",
+          "sales": 16861.5,
+          "orders": 595,
+          "items": 1290
+        },
+        {
+          "scope": "All|All",
+          "name": "19",
+          "sales": 14172.6,
+          "orders": 497,
+          "items": 1074
+        },
+        {
+          "scope": "All|All",
+          "name": "20",
+          "sales": 11678.6,
+          "orders": 411,
+          "items": 882
+        },
+        {
+          "scope": "All|All",
+          "name": "21",
+          "sales": 7754.35,
+          "orders": 289,
+          "items": 600
+        },
+        {
+          "scope": "All|All",
+          "name": "22",
+          "sales": 4047.8,
+          "orders": 151,
+          "items": 305
+        },
+        {
+          "scope": "All|All",
+          "name": "23",
+          "sales": 157.8,
+          "orders": 4,
+          "items": 11
+        },
+        {
+          "scope": "All|American",
+          "name": "10",
+          "sales": 33.45,
+          "orders": 1,
+          "items": 3
+        },
+        {
+          "scope": "All|American",
+          "name": "11",
+          "sales": 1415.3,
+          "orders": 109,
+          "items": 140
+        },
+        {
+          "scope": "All|American",
+          "name": "12",
+          "sales": 3901.65,
+          "orders": 267,
+          "items": 375
+        },
+        {
+          "scope": "All|American",
+          "name": "13",
+          "sales": 3827.7,
+          "orders": 240,
+          "items": 368
+        },
+        {
+          "scope": "All|American",
+          "name": "14",
+          "sales": 2243.7,
+          "orders": 174,
+          "items": 219
+        },
+        {
+          "scope": "All|American",
+          "name": "15",
+          "sales": 1819.4,
+          "orders": 153,
+          "items": 176
+        },
+        {
+          "scope": "All|American",
+          "name": "16",
+          "sales": 2216.95,
+          "orders": 177,
+          "items": 217
+        },
+        {
+          "scope": "All|American",
+          "name": "17",
+          "sales": 3221.6,
+          "orders": 260,
+          "items": 313
+        },
+        {
+          "scope": "All|American",
+          "name": "18",
+          "sales": 2997.35,
+          "orders": 245,
+          "items": 293
+        },
+        {
+          "scope": "All|American",
+          "name": "19",
+          "sales": 2289,
+          "orders": 187,
+          "items": 221
+        },
+        {
+          "scope": "All|American",
+          "name": "20",
+          "sales": 2238.05,
+          "orders": 172,
+          "items": 213
+        },
+        {
+          "scope": "All|American",
+          "name": "21",
+          "sales": 1324.8,
+          "orders": 109,
+          "items": 131
+        },
+        {
+          "scope": "All|American",
+          "name": "22",
+          "sales": 701.8,
+          "orders": 57,
+          "items": 64
+        },
+        {
+          "scope": "All|American",
+          "name": "23",
+          "sales": 7,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "All|Asian",
+          "name": "10",
+          "sales": 11.95,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "All|Asian",
+          "name": "11",
+          "sales": 2689.55,
+          "orders": 148,
+          "items": 196
+        },
+        {
+          "scope": "All|Asian",
+          "name": "12",
+          "sales": 5889.8,
+          "orders": 310,
+          "items": 450
+        },
+        {
+          "scope": "All|Asian",
+          "name": "13",
+          "sales": 6110.3,
+          "orders": 300,
+          "items": 448
+        },
+        {
+          "scope": "All|Asian",
+          "name": "14",
+          "sales": 3763.35,
+          "orders": 200,
+          "items": 276
+        },
+        {
+          "scope": "All|Asian",
+          "name": "15",
+          "sales": 2783.6,
+          "orders": 167,
+          "items": 208
+        },
+        {
+          "scope": "All|Asian",
+          "name": "16",
+          "sales": 4125.85,
+          "orders": 239,
+          "items": 306
+        },
+        {
+          "scope": "All|Asian",
+          "name": "17",
+          "sales": 5513.95,
+          "orders": 314,
+          "items": 400
+        },
+        {
+          "scope": "All|Asian",
+          "name": "18",
+          "sales": 4731.1,
+          "orders": 289,
+          "items": 356
+        },
+        {
+          "scope": "All|Asian",
+          "name": "19",
+          "sales": 3911.85,
+          "orders": 249,
+          "items": 299
+        },
+        {
+          "scope": "All|Asian",
+          "name": "20",
+          "sales": 3528.65,
+          "orders": 208,
+          "items": 256
+        },
+        {
+          "scope": "All|Asian",
+          "name": "21",
+          "sales": 2378.35,
+          "orders": 141,
+          "items": 180
+        },
+        {
+          "scope": "All|Asian",
+          "name": "22",
+          "sales": 1239.4,
+          "orders": 66,
+          "items": 91
+        },
+        {
+          "scope": "All|Asian",
+          "name": "23",
+          "sales": 42.95,
+          "orders": 3,
+          "items": 3
+        },
+        {
+          "scope": "All|Italian",
+          "name": "10",
+          "sales": 17.95,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "All|Italian",
+          "name": "11",
+          "sales": 2117,
+          "orders": 106,
+          "items": 127
+        },
+        {
+          "scope": "All|Italian",
+          "name": "12",
+          "sales": 7120.8,
+          "orders": 275,
+          "items": 424
+        },
+        {
+          "scope": "All|Italian",
+          "name": "13",
+          "sales": 6283.75,
+          "orders": 259,
+          "items": 373
+        },
+        {
+          "scope": "All|Italian",
+          "name": "14",
+          "sales": 3825.8,
+          "orders": 173,
+          "items": 228
+        },
+        {
+          "scope": "All|Italian",
+          "name": "15",
+          "sales": 3032.1,
+          "orders": 148,
+          "items": 181
+        },
+        {
+          "scope": "All|Italian",
+          "name": "16",
+          "sales": 4392.2,
+          "orders": 213,
+          "items": 259
+        },
+        {
+          "scope": "All|Italian",
+          "name": "17",
+          "sales": 5375.3,
+          "orders": 268,
+          "items": 320
+        },
+        {
+          "scope": "All|Italian",
+          "name": "18",
+          "sales": 5404.3,
+          "orders": 265,
+          "items": 323
+        },
+        {
+          "scope": "All|Italian",
+          "name": "19",
+          "sales": 4624.3,
+          "orders": 222,
+          "items": 278
+        },
+        {
+          "scope": "All|Italian",
+          "name": "20",
+          "sales": 3595.6,
+          "orders": 177,
+          "items": 214
+        },
+        {
+          "scope": "All|Italian",
+          "name": "21",
+          "sales": 2396.1,
+          "orders": 120,
+          "items": 143
+        },
+        {
+          "scope": "All|Italian",
+          "name": "22",
+          "sales": 1180.15,
+          "orders": 61,
+          "items": 71
+        },
+        {
+          "scope": "All|Italian",
+          "name": "23",
+          "sales": 97.35,
+          "orders": 4,
+          "items": 6
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "11",
+          "sales": 1900.65,
+          "orders": 125,
+          "items": 161
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "12",
+          "sales": 4806.15,
+          "orders": 285,
+          "items": 410
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "13",
+          "sales": 4418.5,
+          "orders": 256,
+          "items": 369
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "14",
+          "sales": 2782.85,
+          "orders": 172,
+          "items": 233
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "15",
+          "sales": 2168.8,
+          "orders": 148,
+          "items": 178
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "16",
+          "sales": 2976.65,
+          "orders": 205,
+          "items": 253
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "17",
+          "sales": 3758.65,
+          "orders": 255,
+          "items": 322
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "18",
+          "sales": 3728.75,
+          "orders": 259,
+          "items": 318
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "19",
+          "sales": 3347.45,
+          "orders": 221,
+          "items": 276
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "20",
+          "sales": 2316.3,
+          "orders": 160,
+          "items": 199
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "21",
+          "sales": 1655.1,
+          "orders": 119,
+          "items": 146
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "22",
+          "sales": 926.45,
+          "orders": 60,
+          "items": 79
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "23",
+          "sales": 10.5,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Jan|All",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Jan|All",
+          "name": "11",
+          "sales": 2634.1,
+          "orders": 100,
+          "items": 202
+        },
+        {
+          "scope": "Jan|All",
+          "name": "12",
+          "sales": 7312.85,
+          "orders": 206,
+          "items": 565
+        },
+        {
+          "scope": "Jan|All",
+          "name": "13",
+          "sales": 6662.45,
+          "orders": 200,
+          "items": 507
+        },
+        {
+          "scope": "Jan|All",
+          "name": "14",
+          "sales": 4660,
+          "orders": 164,
+          "items": 355
+        },
+        {
+          "scope": "Jan|All",
+          "name": "15",
+          "sales": 3412.65,
+          "orders": 131,
+          "items": 263
+        },
+        {
+          "scope": "Jan|All",
+          "name": "16",
+          "sales": 4608.3,
+          "orders": 164,
+          "items": 348
+        },
+        {
+          "scope": "Jan|All",
+          "name": "17",
+          "sales": 5595.2,
+          "orders": 191,
+          "items": 422
+        },
+        {
+          "scope": "Jan|All",
+          "name": "18",
+          "sales": 6076.7,
+          "orders": 207,
+          "items": 463
+        },
+        {
+          "scope": "Jan|All",
+          "name": "19",
+          "sales": 4922.35,
+          "orders": 177,
+          "items": 376
+        },
+        {
+          "scope": "Jan|All",
+          "name": "20",
+          "sales": 3958.2,
+          "orders": 147,
+          "items": 297
+        },
+        {
+          "scope": "Jan|All",
+          "name": "21",
+          "sales": 2656.15,
+          "orders": 96,
+          "items": 203
+        },
+        {
+          "scope": "Jan|All",
+          "name": "22",
+          "sales": 1296.5,
+          "orders": 51,
+          "items": 101
+        },
+        {
+          "scope": "Jan|All",
+          "name": "23",
+          "sales": 21.5,
+          "orders": 1,
+          "items": 2
+        },
+        {
+          "scope": "Jan|American",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Jan|American",
+          "name": "11",
+          "sales": 420.15,
+          "orders": 37,
+          "items": 41
+        },
+        {
+          "scope": "Jan|American",
+          "name": "12",
+          "sales": 1219.55,
+          "orders": 86,
+          "items": 120
+        },
+        {
+          "scope": "Jan|American",
+          "name": "13",
+          "sales": 1324.6,
+          "orders": 81,
+          "items": 126
+        },
+        {
+          "scope": "Jan|American",
+          "name": "14",
+          "sales": 863.6,
+          "orders": 68,
+          "items": 84
+        },
+        {
+          "scope": "Jan|American",
+          "name": "15",
+          "sales": 663.95,
+          "orders": 58,
+          "items": 64
+        },
+        {
+          "scope": "Jan|American",
+          "name": "16",
+          "sales": 706.85,
+          "orders": 54,
+          "items": 67
+        },
+        {
+          "scope": "Jan|American",
+          "name": "17",
+          "sales": 957.65,
+          "orders": 74,
+          "items": 89
+        },
+        {
+          "scope": "Jan|American",
+          "name": "18",
+          "sales": 1106.15,
+          "orders": 89,
+          "items": 105
+        },
+        {
+          "scope": "Jan|American",
+          "name": "19",
+          "sales": 744.05,
+          "orders": 61,
+          "items": 74
+        },
+        {
+          "scope": "Jan|American",
+          "name": "20",
+          "sales": 698.1,
+          "orders": 56,
+          "items": 68
+        },
+        {
+          "scope": "Jan|American",
+          "name": "21",
+          "sales": 411.05,
+          "orders": 35,
+          "items": 40
+        },
+        {
+          "scope": "Jan|American",
+          "name": "22",
+          "sales": 162.15,
+          "orders": 14,
+          "items": 15
+        },
+        {
+          "scope": "Jan|American",
+          "name": "23",
+          "sales": 7,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "11",
+          "sales": 791.7,
+          "orders": 47,
+          "items": 59
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "12",
+          "sales": 1877.8,
+          "orders": 96,
+          "items": 146
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "13",
+          "sales": 2068.1,
+          "orders": 107,
+          "items": 156
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "14",
+          "sales": 1374.35,
+          "orders": 75,
+          "items": 102
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "15",
+          "sales": 859.25,
+          "orders": 55,
+          "items": 69
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "16",
+          "sales": 1486.4,
+          "orders": 89,
+          "items": 114
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "17",
+          "sales": 1707.45,
+          "orders": 96,
+          "items": 126
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "18",
+          "sales": 1713.6,
+          "orders": 104,
+          "items": 129
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "19",
+          "sales": 1356.75,
+          "orders": 83,
+          "items": 107
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "20",
+          "sales": 1158.1,
+          "orders": 69,
+          "items": 84
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "21",
+          "sales": 843.5,
+          "orders": 49,
+          "items": 64
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "22",
+          "sales": 351.5,
+          "orders": 22,
+          "items": 30
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "23",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "11",
+          "sales": 738.85,
+          "orders": 36,
+          "items": 45
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "12",
+          "sales": 2592.35,
+          "orders": 100,
+          "items": 155
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "13",
+          "sales": 1984.65,
+          "orders": 85,
+          "items": 119
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "14",
+          "sales": 1389,
+          "orders": 62,
+          "items": 83
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "15",
+          "sales": 1020.15,
+          "orders": 54,
+          "items": 61
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "16",
+          "sales": 1387.15,
+          "orders": 64,
+          "items": 81
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "17",
+          "sales": 1567.7,
+          "orders": 77,
+          "items": 93
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "18",
+          "sales": 1833.55,
+          "orders": 92,
+          "items": 110
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "19",
+          "sales": 1638.2,
+          "orders": 79,
+          "items": 98
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "20",
+          "sales": 1256.5,
+          "orders": 61,
+          "items": 74
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "21",
+          "sales": 878.3,
+          "orders": 42,
+          "items": 52
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "22",
+          "sales": 426.85,
+          "orders": 21,
+          "items": 26
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "23",
+          "sales": 14.5,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "11",
+          "sales": 683.4,
+          "orders": 47,
+          "items": 57
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "12",
+          "sales": 1623.15,
+          "orders": 92,
+          "items": 144
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "13",
+          "sales": 1285.1,
+          "orders": 69,
+          "items": 106
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "14",
+          "sales": 1033.05,
+          "orders": 64,
+          "items": 86
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "15",
+          "sales": 869.3,
+          "orders": 59,
+          "items": 69
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "16",
+          "sales": 1027.9,
+          "orders": 73,
+          "items": 86
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "17",
+          "sales": 1362.4,
+          "orders": 83,
+          "items": 114
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "18",
+          "sales": 1423.4,
+          "orders": 93,
+          "items": 119
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "19",
+          "sales": 1183.35,
+          "orders": 79,
+          "items": 97
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "20",
+          "sales": 845.5,
+          "orders": 57,
+          "items": 71
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "21",
+          "sales": 523.3,
+          "orders": 38,
+          "items": 47
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "22",
+          "sales": 356,
+          "orders": 25,
+          "items": 30
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "23",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Feb|All",
+          "name": "10",
+          "sales": 29.9,
+          "orders": 1,
+          "items": 2
+        },
+        {
+          "scope": "Feb|All",
+          "name": "11",
+          "sales": 3005.85,
+          "orders": 94,
+          "items": 230
+        },
+        {
+          "scope": "Feb|All",
+          "name": "12",
+          "sales": 6536.7,
+          "orders": 208,
+          "items": 499
+        },
+        {
+          "scope": "Feb|All",
+          "name": "13",
+          "sales": 6140.85,
+          "orders": 179,
+          "items": 464
+        },
+        {
+          "scope": "Feb|All",
+          "name": "14",
+          "sales": 4255.45,
+          "orders": 123,
+          "items": 323
+        },
+        {
+          "scope": "Feb|All",
+          "name": "15",
+          "sales": 3306.3,
+          "orders": 109,
+          "items": 246
+        },
+        {
+          "scope": "Feb|All",
+          "name": "16",
+          "sales": 3764.55,
+          "orders": 136,
+          "items": 289
+        },
+        {
+          "scope": "Feb|All",
+          "name": "17",
+          "sales": 6033.9,
+          "orders": 216,
+          "items": 457
+        },
+        {
+          "scope": "Feb|All",
+          "name": "18",
+          "sales": 5144.2,
+          "orders": 179,
+          "items": 395
+        },
+        {
+          "scope": "Feb|All",
+          "name": "19",
+          "sales": 4392.45,
+          "orders": 145,
+          "items": 327
+        },
+        {
+          "scope": "Feb|All",
+          "name": "20",
+          "sales": 3666.75,
+          "orders": 128,
+          "items": 282
+        },
+        {
+          "scope": "Feb|All",
+          "name": "21",
+          "sales": 3017.3,
+          "orders": 105,
+          "items": 225
+        },
+        {
+          "scope": "Feb|All",
+          "name": "22",
+          "sales": 1412.25,
+          "orders": 50,
+          "items": 106
+        },
+        {
+          "scope": "Feb|All",
+          "name": "23",
+          "sales": 83.9,
+          "orders": 2,
+          "items": 6
+        },
+        {
+          "scope": "Feb|American",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Feb|American",
+          "name": "11",
+          "sales": 504.05,
+          "orders": 33,
+          "items": 50
+        },
+        {
+          "scope": "Feb|American",
+          "name": "12",
+          "sales": 1235.2,
+          "orders": 84,
+          "items": 116
+        },
+        {
+          "scope": "Feb|American",
+          "name": "13",
+          "sales": 1077.3,
+          "orders": 69,
+          "items": 105
+        },
+        {
+          "scope": "Feb|American",
+          "name": "14",
+          "sales": 654.85,
+          "orders": 52,
+          "items": 67
+        },
+        {
+          "scope": "Feb|American",
+          "name": "15",
+          "sales": 539.3,
+          "orders": 45,
+          "items": 52
+        },
+        {
+          "scope": "Feb|American",
+          "name": "16",
+          "sales": 629.7,
+          "orders": 52,
+          "items": 62
+        },
+        {
+          "scope": "Feb|American",
+          "name": "17",
+          "sales": 1045.9,
+          "orders": 87,
+          "items": 103
+        },
+        {
+          "scope": "Feb|American",
+          "name": "18",
+          "sales": 904.7,
+          "orders": 75,
+          "items": 90
+        },
+        {
+          "scope": "Feb|American",
+          "name": "19",
+          "sales": 767.5,
+          "orders": 58,
+          "items": 69
+        },
+        {
+          "scope": "Feb|American",
+          "name": "20",
+          "sales": 762.8,
+          "orders": 56,
+          "items": 71
+        },
+        {
+          "scope": "Feb|American",
+          "name": "21",
+          "sales": 480.3,
+          "orders": 35,
+          "items": 43
+        },
+        {
+          "scope": "Feb|American",
+          "name": "22",
+          "sales": 345.55,
+          "orders": 28,
+          "items": 31
+        },
+        {
+          "scope": "Feb|American",
+          "name": "23",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "10",
+          "sales": 11.95,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "11",
+          "sales": 1004.9,
+          "orders": 52,
+          "items": 73
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "12",
+          "sales": 1890.3,
+          "orders": 102,
+          "items": 143
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "13",
+          "sales": 1793.55,
+          "orders": 88,
+          "items": 130
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "14",
+          "sales": 1165.5,
+          "orders": 58,
+          "items": 86
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "15",
+          "sales": 1108.05,
+          "orders": 63,
+          "items": 80
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "16",
+          "sales": 1191.7,
+          "orders": 66,
+          "items": 91
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "17",
+          "sales": 1994.45,
+          "orders": 117,
+          "items": 144
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "18",
+          "sales": 1367.9,
+          "orders": 82,
+          "items": 106
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "19",
+          "sales": 1148.9,
+          "orders": 77,
+          "items": 87
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "20",
+          "sales": 1095,
+          "orders": 66,
+          "items": 82
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "21",
+          "sales": 916.75,
+          "orders": 53,
+          "items": 67
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "22",
+          "sales": 360.3,
+          "orders": 18,
+          "items": 25
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "23",
+          "sales": 26.45,
+          "orders": 2,
+          "items": 2
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "10",
+          "sales": 17.95,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "11",
+          "sales": 854.55,
+          "orders": 44,
+          "items": 51
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "12",
+          "sales": 1839.45,
+          "orders": 79,
+          "items": 109
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "13",
+          "sales": 1834.7,
+          "orders": 76,
+          "items": 108
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "14",
+          "sales": 1387.35,
+          "orders": 60,
+          "items": 83
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "15",
+          "sales": 968.6,
+          "orders": 43,
+          "items": 57
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "16",
+          "sales": 1263.75,
+          "orders": 62,
+          "items": 75
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "17",
+          "sales": 1834.25,
+          "orders": 92,
+          "items": 110
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "18",
+          "sales": 1720.05,
+          "orders": 82,
+          "items": 103
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "19",
+          "sales": 1494.4,
+          "orders": 72,
+          "items": 90
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "20",
+          "sales": 1033.2,
+          "orders": 50,
+          "items": 62
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "21",
+          "sales": 896.95,
+          "orders": 43,
+          "items": 54
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "22",
+          "sales": 352.9,
+          "orders": 17,
+          "items": 21
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "23",
+          "sales": 46.95,
+          "orders": 2,
+          "items": 3
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "11",
+          "sales": 642.35,
+          "orders": 38,
+          "items": 56
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "12",
+          "sales": 1571.75,
+          "orders": 94,
+          "items": 131
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "13",
+          "sales": 1435.3,
+          "orders": 89,
+          "items": 121
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "14",
+          "sales": 1047.75,
+          "orders": 59,
+          "items": 87
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "15",
+          "sales": 690.35,
+          "orders": 43,
+          "items": 57
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "16",
+          "sales": 679.4,
+          "orders": 51,
+          "items": 61
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "17",
+          "sales": 1159.3,
+          "orders": 82,
+          "items": 100
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "18",
+          "sales": 1151.55,
+          "orders": 78,
+          "items": 96
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "19",
+          "sales": 981.65,
+          "orders": 65,
+          "items": 81
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "20",
+          "sales": 775.75,
+          "orders": 54,
+          "items": 67
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "21",
+          "sales": 723.3,
+          "orders": 47,
+          "items": 61
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "22",
+          "sales": 353.5,
+          "orders": 19,
+          "items": 29
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "23",
+          "sales": 10.5,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Mar|All",
+          "name": "10",
+          "sales": 33.45,
+          "orders": 1,
+          "items": 3
+        },
+        {
+          "scope": "Mar|All",
+          "name": "11",
+          "sales": 2482.55,
+          "orders": 92,
+          "items": 192
+        },
+        {
+          "scope": "Mar|All",
+          "name": "12",
+          "sales": 7868.85,
+          "orders": 230,
+          "items": 595
+        },
+        {
+          "scope": "Mar|All",
+          "name": "13",
+          "sales": 7836.95,
+          "orders": 211,
+          "items": 587
+        },
+        {
+          "scope": "Mar|All",
+          "name": "14",
+          "sales": 3700.25,
+          "orders": 136,
+          "items": 278
+        },
+        {
+          "scope": "Mar|All",
+          "name": "15",
+          "sales": 3084.95,
+          "orders": 114,
+          "items": 234
+        },
+        {
+          "scope": "Mar|All",
+          "name": "16",
+          "sales": 5338.8,
+          "orders": 179,
+          "items": 398
+        },
+        {
+          "scope": "Mar|All",
+          "name": "17",
+          "sales": 6240.4,
+          "orders": 211,
+          "items": 476
+        },
+        {
+          "scope": "Mar|All",
+          "name": "18",
+          "sales": 5640.6,
+          "orders": 209,
+          "items": 432
+        },
+        {
+          "scope": "Mar|All",
+          "name": "19",
+          "sales": 4857.8,
+          "orders": 175,
+          "items": 371
+        },
+        {
+          "scope": "Mar|All",
+          "name": "20",
+          "sales": 4053.65,
+          "orders": 136,
+          "items": 303
+        },
+        {
+          "scope": "Mar|All",
+          "name": "21",
+          "sales": 2080.9,
+          "orders": 88,
+          "items": 172
+        },
+        {
+          "scope": "Mar|All",
+          "name": "22",
+          "sales": 1339.05,
+          "orders": 50,
+          "items": 98
+        },
+        {
+          "scope": "Mar|All",
+          "name": "23",
+          "sales": 52.4,
+          "orders": 1,
+          "items": 3
+        },
+        {
+          "scope": "Mar|American",
+          "name": "10",
+          "sales": 33.45,
+          "orders": 1,
+          "items": 3
+        },
+        {
+          "scope": "Mar|American",
+          "name": "11",
+          "sales": 491.1,
+          "orders": 39,
+          "items": 49
+        },
+        {
+          "scope": "Mar|American",
+          "name": "12",
+          "sales": 1446.9,
+          "orders": 97,
+          "items": 139
+        },
+        {
+          "scope": "Mar|American",
+          "name": "13",
+          "sales": 1425.8,
+          "orders": 90,
+          "items": 137
+        },
+        {
+          "scope": "Mar|American",
+          "name": "14",
+          "sales": 725.25,
+          "orders": 54,
+          "items": 68
+        },
+        {
+          "scope": "Mar|American",
+          "name": "15",
+          "sales": 616.15,
+          "orders": 50,
+          "items": 60
+        },
+        {
+          "scope": "Mar|American",
+          "name": "16",
+          "sales": 880.4,
+          "orders": 71,
+          "items": 88
+        },
+        {
+          "scope": "Mar|American",
+          "name": "17",
+          "sales": 1218.05,
+          "orders": 99,
+          "items": 121
+        },
+        {
+          "scope": "Mar|American",
+          "name": "18",
+          "sales": 986.5,
+          "orders": 81,
+          "items": 98
+        },
+        {
+          "scope": "Mar|American",
+          "name": "19",
+          "sales": 777.45,
+          "orders": 68,
+          "items": 78
+        },
+        {
+          "scope": "Mar|American",
+          "name": "20",
+          "sales": 777.15,
+          "orders": 60,
+          "items": 74
+        },
+        {
+          "scope": "Mar|American",
+          "name": "21",
+          "sales": 433.45,
+          "orders": 39,
+          "items": 48
+        },
+        {
+          "scope": "Mar|American",
+          "name": "22",
+          "sales": 194.1,
+          "orders": 15,
+          "items": 18
+        },
+        {
+          "scope": "Mar|American",
+          "name": "23",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "11",
+          "sales": 892.95,
+          "orders": 49,
+          "items": 64
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "12",
+          "sales": 2121.7,
+          "orders": 112,
+          "items": 161
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "13",
+          "sales": 2248.65,
+          "orders": 105,
+          "items": 162
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "14",
+          "sales": 1223.5,
+          "orders": 67,
+          "items": 88
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "15",
+          "sales": 816.3,
+          "orders": 49,
+          "items": 59
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "16",
+          "sales": 1447.75,
+          "orders": 84,
+          "items": 101
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "17",
+          "sales": 1812.05,
+          "orders": 101,
+          "items": 130
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "18",
+          "sales": 1649.6,
+          "orders": 103,
+          "items": 121
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "19",
+          "sales": 1406.2,
+          "orders": 89,
+          "items": 105
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "20",
+          "sales": 1275.55,
+          "orders": 73,
+          "items": 90
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "21",
+          "sales": 618.1,
+          "orders": 39,
+          "items": 49
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "22",
+          "sales": 527.6,
+          "orders": 26,
+          "items": 36
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "23",
+          "sales": 16.5,
+          "orders": 1,
+          "items": 1
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "11",
+          "sales": 523.6,
+          "orders": 26,
+          "items": 31
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "12",
+          "sales": 2689,
+          "orders": 96,
+          "items": 160
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "13",
+          "sales": 2464.4,
+          "orders": 98,
+          "items": 146
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "14",
+          "sales": 1049.45,
+          "orders": 51,
+          "items": 62
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "15",
+          "sales": 1043.35,
+          "orders": 51,
+          "items": 63
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "16",
+          "sales": 1741.3,
+          "orders": 87,
+          "items": 103
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "17",
+          "sales": 1973.35,
+          "orders": 99,
+          "items": 117
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "18",
+          "sales": 1850.7,
+          "orders": 91,
+          "items": 110
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "19",
+          "sales": 1491.7,
+          "orders": 71,
+          "items": 90
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "20",
+          "sales": 1305.9,
+          "orders": 66,
+          "items": 78
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "21",
+          "sales": 620.85,
+          "orders": 35,
+          "items": 37
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "22",
+          "sales": 400.4,
+          "orders": 23,
+          "items": 24
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "23",
+          "sales": 35.9,
+          "orders": 1,
+          "items": 2
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "10",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "11",
+          "sales": 574.9,
+          "orders": 40,
+          "items": 48
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "12",
+          "sales": 1611.25,
+          "orders": 99,
+          "items": 135
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "13",
+          "sales": 1698.1,
+          "orders": 98,
+          "items": 142
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "14",
+          "sales": 702.05,
+          "orders": 49,
+          "items": 60
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "15",
+          "sales": 609.15,
+          "orders": 46,
+          "items": 52
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "16",
+          "sales": 1269.35,
+          "orders": 81,
+          "items": 106
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "17",
+          "sales": 1236.95,
+          "orders": 90,
+          "items": 108
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "18",
+          "sales": 1153.8,
+          "orders": 88,
+          "items": 103
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "19",
+          "sales": 1182.45,
+          "orders": 77,
+          "items": 98
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "20",
+          "sales": 695.05,
+          "orders": 49,
+          "items": 61
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "21",
+          "sales": 408.5,
+          "orders": 34,
+          "items": 38
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "22",
+          "sales": 216.95,
+          "orders": 16,
+          "items": 20
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "23",
+          "sales": 0,
+          "orders": 0,
+          "items": 0
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    },
+    "items": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "name": "Korean Beef Bowl",
+          "sales": 10554.6,
+          "orders": 566,
+          "items": 588
+        },
+        {
+          "scope": "All|All",
+          "name": "Spaghetti & Meatballs",
+          "sales": 8436.5,
+          "orders": 460,
+          "items": 470
+        },
+        {
+          "scope": "All|All",
+          "name": "Tofu Pad Thai",
+          "sales": 8149,
+          "orders": 542,
+          "items": 562
+        },
+        {
+          "scope": "All|All",
+          "name": "Cheeseburger",
+          "sales": 8132.85,
+          "orders": 559,
+          "items": 583
+        },
+        {
+          "scope": "All|All",
+          "name": "Hamburger",
+          "sales": 8054.9,
+          "orders": 595,
+          "items": 622
+        },
+        {
+          "scope": "All|All",
+          "name": "Orange Chicken",
+          "sales": 7524,
+          "orders": 456,
+          "items": 456
+        },
+        {
+          "scope": "All|All",
+          "name": "Eggplant Parmesan",
+          "sales": 7119,
+          "orders": 408,
+          "items": 420
+        },
+        {
+          "scope": "All|All",
+          "name": "Steak Torta",
+          "sales": 6821.55,
+          "orders": 471,
+          "items": 489
+        },
+        {
+          "scope": "All|American",
+          "name": "Cheeseburger",
+          "sales": 8132.85,
+          "orders": 559,
+          "items": 583
+        },
+        {
+          "scope": "All|American",
+          "name": "Hamburger",
+          "sales": 8054.9,
+          "orders": 595,
+          "items": 622
+        },
+        {
+          "scope": "All|American",
+          "name": "French Fries",
+          "sales": 3997,
+          "orders": 547,
+          "items": 571
+        },
+        {
+          "scope": "All|American",
+          "name": "Mac & Cheese",
+          "sales": 3241,
+          "orders": 450,
+          "items": 463
+        },
+        {
+          "scope": "All|American",
+          "name": "Veggie Burger",
+          "sales": 2499,
+          "orders": 235,
+          "items": 238
+        },
+        {
+          "scope": "All|American",
+          "name": "Hot Dog",
+          "sales": 2313,
+          "orders": 256,
+          "items": 257
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Korean Beef Bowl",
+          "sales": 10554.6,
+          "orders": 566,
+          "items": 588
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Tofu Pad Thai",
+          "sales": 8149,
+          "orders": 542,
+          "items": 562
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Orange Chicken",
+          "sales": 7524,
+          "orders": 456,
+          "items": 456
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Pork Ramen",
+          "sales": 6462,
+          "orders": 351,
+          "items": 360
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Salmon Roll",
+          "sales": 4843.8,
+          "orders": 319,
+          "items": 324
+        },
+        {
+          "scope": "All|Asian",
+          "name": "California Roll",
+          "sales": 4242.25,
+          "orders": 348,
+          "items": 355
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Edamame",
+          "sales": 3100,
+          "orders": 596,
+          "items": 620
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Potstickers",
+          "sales": 1845,
+          "orders": 201,
+          "items": 205
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Spaghetti & Meatballs",
+          "sales": 8436.5,
+          "orders": 460,
+          "items": 470
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Eggplant Parmesan",
+          "sales": 7119,
+          "orders": 408,
+          "items": 420
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Chicken Parmesan",
+          "sales": 6533.8,
+          "orders": 354,
+          "items": 364
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Mushroom Ravioli",
+          "sales": 5564.5,
+          "orders": 356,
+          "items": 359
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Spaghetti",
+          "sales": 5321.5,
+          "orders": 367,
+          "items": 367
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Meat Lasagna",
+          "sales": 4900.35,
+          "orders": 266,
+          "items": 273
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Shrimp Scampi",
+          "sales": 4768.05,
+          "orders": 235,
+          "items": 239
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Fettuccine Alfredo",
+          "sales": 3610.5,
+          "orders": 246,
+          "items": 249
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Steak Torta",
+          "sales": 6821.55,
+          "orders": 471,
+          "items": 489
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chicken Burrito",
+          "sales": 5892.25,
+          "orders": 441,
+          "items": 455
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Steak Burrito",
+          "sales": 5292.3,
+          "orders": 349,
+          "items": 354
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chicken Torta",
+          "sales": 4529.05,
+          "orders": 369,
+          "items": 379
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chips & Salsa",
+          "sales": 3227,
+          "orders": 448,
+          "items": 461
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Steak Tacos",
+          "sales": 2985.3,
+          "orders": 211,
+          "items": 214
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Cheese Quesadillas",
+          "sales": 2446.5,
+          "orders": 229,
+          "items": 233
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chips & Guacamole",
+          "sales": 2133,
+          "orders": 231,
+          "items": 237
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Korean Beef Bowl",
+          "sales": 3266.9,
+          "orders": 174,
+          "items": 182
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Cheeseburger",
+          "sales": 2748.15,
+          "orders": 188,
+          "items": 197
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Spaghetti & Meatballs",
+          "sales": 2746.35,
+          "orders": 152,
+          "items": 153
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Tofu Pad Thai",
+          "sales": 2740.5,
+          "orders": 183,
+          "items": 189
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Hamburger",
+          "sales": 2667.7,
+          "orders": 196,
+          "items": 206
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Steak Torta",
+          "sales": 2594.7,
+          "orders": 179,
+          "items": 186
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Eggplant Parmesan",
+          "sales": 2423.85,
+          "orders": 142,
+          "items": 143
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Orange Chicken",
+          "sales": 2409,
+          "orders": 146,
+          "items": 146
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Cheeseburger",
+          "sales": 2748.15,
+          "orders": 188,
+          "items": 197
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Hamburger",
+          "sales": 2667.7,
+          "orders": 196,
+          "items": 206
+        },
+        {
+          "scope": "Jan|American",
+          "name": "French Fries",
+          "sales": 1379,
+          "orders": 190,
+          "items": 197
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Mac & Cheese",
+          "sales": 945,
+          "orders": 132,
+          "items": 135
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Veggie Burger",
+          "sales": 798,
+          "orders": 75,
+          "items": 76
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Hot Dog",
+          "sales": 747,
+          "orders": 83,
+          "items": 83
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Korean Beef Bowl",
+          "sales": 3266.9,
+          "orders": 174,
+          "items": 182
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Tofu Pad Thai",
+          "sales": 2740.5,
+          "orders": 183,
+          "items": 189
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Orange Chicken",
+          "sales": 2409,
+          "orders": 146,
+          "items": 146
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Pork Ramen",
+          "sales": 2189.9,
+          "orders": 120,
+          "items": 122
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "California Roll",
+          "sales": 1613.25,
+          "orders": 131,
+          "items": 135
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Salmon Roll",
+          "sales": 1509.95,
+          "orders": 100,
+          "items": 101
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Edamame",
+          "sales": 1175,
+          "orders": 225,
+          "items": 235
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Potstickers",
+          "sales": 684,
+          "orders": 74,
+          "items": 76
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Spaghetti & Meatballs",
+          "sales": 2746.35,
+          "orders": 152,
+          "items": 153
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Eggplant Parmesan",
+          "sales": 2423.85,
+          "orders": 142,
+          "items": 143
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Chicken Parmesan",
+          "sales": 2207.85,
+          "orders": 119,
+          "items": 123
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Mushroom Ravioli",
+          "sales": 1999.5,
+          "orders": 128,
+          "items": 129
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Spaghetti",
+          "sales": 1943,
+          "orders": 134,
+          "items": 134
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Meat Lasagna",
+          "sales": 1795,
+          "orders": 97,
+          "items": 100
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Shrimp Scampi",
+          "sales": 1516.2,
+          "orders": 74,
+          "items": 76
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Fettuccine Alfredo",
+          "sales": 1073,
+          "orders": 73,
+          "items": 74
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Steak Torta",
+          "sales": 2594.7,
+          "orders": 179,
+          "items": 186
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chicken Burrito",
+          "sales": 2149.7,
+          "orders": 160,
+          "items": 166
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Steak Burrito",
+          "sales": 1913.6,
+          "orders": 126,
+          "items": 128
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chicken Torta",
+          "sales": 1589.35,
+          "orders": 131,
+          "items": 133
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chips & Salsa",
+          "sales": 1029,
+          "orders": 142,
+          "items": 147
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Steak Tacos",
+          "sales": 920.7,
+          "orders": 66,
+          "items": 66
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Cheese Quesadillas",
+          "sales": 829.5,
+          "orders": 79,
+          "items": 79
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chips & Guacamole",
+          "sales": 783,
+          "orders": 85,
+          "items": 87
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Korean Beef Bowl",
+          "sales": 3482.3,
+          "orders": 189,
+          "items": 194
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Cheeseburger",
+          "sales": 2790,
+          "orders": 191,
+          "items": 200
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Spaghetti & Meatballs",
+          "sales": 2746.35,
+          "orders": 147,
+          "items": 153
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Tofu Pad Thai",
+          "sales": 2508.5,
+          "orders": 168,
+          "items": 173
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Hamburger",
+          "sales": 2421.65,
+          "orders": 179,
+          "items": 187
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Orange Chicken",
+          "sales": 2376,
+          "orders": 144,
+          "items": 144
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Eggplant Parmesan",
+          "sales": 2356.05,
+          "orders": 135,
+          "items": 139
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Pork Ramen",
+          "sales": 2171.95,
+          "orders": 116,
+          "items": 121
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Cheeseburger",
+          "sales": 2790,
+          "orders": 191,
+          "items": 200
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Hamburger",
+          "sales": 2421.65,
+          "orders": 179,
+          "items": 187
+        },
+        {
+          "scope": "Feb|American",
+          "name": "French Fries",
+          "sales": 1148,
+          "orders": 157,
+          "items": 164
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Mac & Cheese",
+          "sales": 1071,
+          "orders": 148,
+          "items": 153
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Veggie Burger",
+          "sales": 850.5,
+          "orders": 80,
+          "items": 81
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Hot Dog",
+          "sales": 666,
+          "orders": 73,
+          "items": 74
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Korean Beef Bowl",
+          "sales": 3482.3,
+          "orders": 189,
+          "items": 194
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Tofu Pad Thai",
+          "sales": 2508.5,
+          "orders": 168,
+          "items": 173
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Orange Chicken",
+          "sales": 2376,
+          "orders": 144,
+          "items": 144
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Pork Ramen",
+          "sales": 2171.95,
+          "orders": 116,
+          "items": 121
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Salmon Roll",
+          "sales": 1614.6,
+          "orders": 105,
+          "items": 108
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "California Roll",
+          "sales": 1350.35,
+          "orders": 113,
+          "items": 113
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Edamame",
+          "sales": 1005,
+          "orders": 193,
+          "items": 201
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Potstickers",
+          "sales": 567,
+          "orders": 62,
+          "items": 63
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Spaghetti & Meatballs",
+          "sales": 2746.35,
+          "orders": 147,
+          "items": 153
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Eggplant Parmesan",
+          "sales": 2356.05,
+          "orders": 135,
+          "items": 139
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Chicken Parmesan",
+          "sales": 1920.65,
+          "orders": 105,
+          "items": 107
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Spaghetti",
+          "sales": 1624,
+          "orders": 112,
+          "items": 112
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Mushroom Ravioli",
+          "sales": 1612,
+          "orders": 103,
+          "items": 104
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Meat Lasagna",
+          "sales": 1561.65,
+          "orders": 83,
+          "items": 87
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Shrimp Scampi",
+          "sales": 1456.35,
+          "orders": 73,
+          "items": 73
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Fettuccine Alfredo",
+          "sales": 1276,
+          "orders": 86,
+          "items": 88
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Steak Torta",
+          "sales": 2148.3,
+          "orders": 147,
+          "items": 154
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chicken Burrito",
+          "sales": 1825.95,
+          "orders": 138,
+          "items": 141
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Steak Burrito",
+          "sales": 1599.65,
+          "orders": 105,
+          "items": 107
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chicken Torta",
+          "sales": 1434,
+          "orders": 116,
+          "items": 120
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Steak Tacos",
+          "sales": 1185.75,
+          "orders": 82,
+          "items": 85
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chips & Salsa",
+          "sales": 994,
+          "orders": 139,
+          "items": 142
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Cheese Quesadillas",
+          "sales": 798,
+          "orders": 74,
+          "items": 76
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chips & Guacamole",
+          "sales": 711,
+          "orders": 77,
+          "items": 79
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Korean Beef Bowl",
+          "sales": 3805.4,
+          "orders": 203,
+          "items": 212
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Hamburger",
+          "sales": 2965.55,
+          "orders": 220,
+          "items": 229
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Spaghetti & Meatballs",
+          "sales": 2943.8,
+          "orders": 161,
+          "items": 164
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Tofu Pad Thai",
+          "sales": 2900,
+          "orders": 191,
+          "items": 200
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Orange Chicken",
+          "sales": 2739,
+          "orders": 166,
+          "items": 166
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Cheeseburger",
+          "sales": 2594.7,
+          "orders": 180,
+          "items": 186
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Chicken Parmesan",
+          "sales": 2405.3,
+          "orders": 130,
+          "items": 134
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Eggplant Parmesan",
+          "sales": 2339.1,
+          "orders": 131,
+          "items": 138
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Hamburger",
+          "sales": 2965.55,
+          "orders": 220,
+          "items": 229
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Cheeseburger",
+          "sales": 2594.7,
+          "orders": 180,
+          "items": 186
+        },
+        {
+          "scope": "Mar|American",
+          "name": "French Fries",
+          "sales": 1470,
+          "orders": 200,
+          "items": 210
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Mac & Cheese",
+          "sales": 1225,
+          "orders": 170,
+          "items": 175
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Hot Dog",
+          "sales": 900,
+          "orders": 100,
+          "items": 100
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Veggie Burger",
+          "sales": 850.5,
+          "orders": 80,
+          "items": 81
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Korean Beef Bowl",
+          "sales": 3805.4,
+          "orders": 203,
+          "items": 212
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Tofu Pad Thai",
+          "sales": 2900,
+          "orders": 191,
+          "items": 200
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Orange Chicken",
+          "sales": 2739,
+          "orders": 166,
+          "items": 166
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Pork Ramen",
+          "sales": 2100.15,
+          "orders": 115,
+          "items": 117
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Salmon Roll",
+          "sales": 1719.25,
+          "orders": 114,
+          "items": 115
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "California Roll",
+          "sales": 1278.65,
+          "orders": 104,
+          "items": 107
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Edamame",
+          "sales": 920,
+          "orders": 178,
+          "items": 184
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Potstickers",
+          "sales": 594,
+          "orders": 65,
+          "items": 66
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Spaghetti & Meatballs",
+          "sales": 2943.8,
+          "orders": 161,
+          "items": 164
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Chicken Parmesan",
+          "sales": 2405.3,
+          "orders": 130,
+          "items": 134
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Eggplant Parmesan",
+          "sales": 2339.1,
+          "orders": 131,
+          "items": 138
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Mushroom Ravioli",
+          "sales": 1953,
+          "orders": 125,
+          "items": 126
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Shrimp Scampi",
+          "sales": 1795.5,
+          "orders": 88,
+          "items": 90
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Spaghetti",
+          "sales": 1754.5,
+          "orders": 121,
+          "items": 121
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Meat Lasagna",
+          "sales": 1543.7,
+          "orders": 86,
+          "items": 86
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Fettuccine Alfredo",
+          "sales": 1261.5,
+          "orders": 87,
+          "items": 87
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Steak Torta",
+          "sales": 2078.55,
+          "orders": 145,
+          "items": 149
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chicken Burrito",
+          "sales": 1916.6,
+          "orders": 143,
+          "items": 148
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Steak Burrito",
+          "sales": 1779.05,
+          "orders": 118,
+          "items": 119
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chicken Torta",
+          "sales": 1505.7,
+          "orders": 122,
+          "items": 126
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chips & Salsa",
+          "sales": 1204,
+          "orders": 167,
+          "items": 172
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Steak Tacos",
+          "sales": 878.85,
+          "orders": 63,
+          "items": 63
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Cheese Quesadillas",
+          "sales": 819,
+          "orders": 76,
+          "items": 78
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chips & Guacamole",
+          "sales": 639,
+          "orders": 69,
+          "items": 71
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    },
+    "pairs": {
+      "rows": [
+        {
+          "scope": "All|All",
+          "name": "Edamame + Hamburger",
+          "orders": 78
+        },
+        {
+          "scope": "All|All",
+          "name": "Cheeseburger + Edamame",
+          "orders": 75
+        },
+        {
+          "scope": "All|All",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 72
+        },
+        {
+          "scope": "All|All",
+          "name": "Edamame + Korean Beef Bowl",
+          "orders": 68
+        },
+        {
+          "scope": "All|All",
+          "name": "French Fries + Korean Beef Bowl",
+          "orders": 66
+        },
+        {
+          "scope": "All|American",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 72
+        },
+        {
+          "scope": "All|American",
+          "name": "Cheeseburger + French Fries",
+          "orders": 63
+        },
+        {
+          "scope": "All|American",
+          "name": "French Fries + Hamburger",
+          "orders": 61
+        },
+        {
+          "scope": "All|American",
+          "name": "French Fries + Mac & Cheese",
+          "orders": 57
+        },
+        {
+          "scope": "All|American",
+          "name": "Cheeseburger + Mac & Cheese",
+          "orders": 56
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Edamame + Korean Beef Bowl",
+          "orders": 68
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Edamame + Orange Chicken",
+          "orders": 59
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Korean Beef Bowl + Tofu Pad Thai",
+          "orders": 58
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Edamame + Tofu Pad Thai",
+          "orders": 50
+        },
+        {
+          "scope": "All|Asian",
+          "name": "Korean Beef Bowl + Orange Chicken",
+          "orders": 47
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Spaghetti + Spaghetti & Meatballs",
+          "orders": 45
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Mushroom Ravioli + Spaghetti & Meatballs",
+          "orders": 41
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Eggplant Parmesan + Spaghetti & Meatballs",
+          "orders": 39
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Chicken Parmesan + Spaghetti & Meatballs",
+          "orders": 36
+        },
+        {
+          "scope": "All|Italian",
+          "name": "Eggplant Parmesan + Spaghetti",
+          "orders": 35
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chips & Salsa + Steak Torta",
+          "orders": 58
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chicken Burrito + Steak Torta",
+          "orders": 51
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Steak Burrito + Steak Torta",
+          "orders": 41
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chicken Burrito + Chicken Torta",
+          "orders": 37
+        },
+        {
+          "scope": "All|Mexican",
+          "name": "Chicken Burrito + Chips & Salsa",
+          "orders": 35
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Chips & Salsa + Steak Torta",
+          "orders": 29
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Edamame + Hamburger",
+          "orders": 29
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Chicken Burrito + Tofu Pad Thai",
+          "orders": 26
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Cheeseburger + French Fries",
+          "orders": 24
+        },
+        {
+          "scope": "Jan|All",
+          "name": "Cheeseburger + Spaghetti & Meatballs",
+          "orders": 24
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Cheeseburger + French Fries",
+          "orders": 24
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 21
+        },
+        {
+          "scope": "Jan|American",
+          "name": "French Fries + Hamburger",
+          "orders": 19
+        },
+        {
+          "scope": "Jan|American",
+          "name": "French Fries + Mac & Cheese",
+          "orders": 18
+        },
+        {
+          "scope": "Jan|American",
+          "name": "Hamburger + Mac & Cheese",
+          "orders": 16
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Edamame + Korean Beef Bowl",
+          "orders": 24
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Edamame + Orange Chicken",
+          "orders": 18
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Orange Chicken + Pork Ramen",
+          "orders": 18
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "Korean Beef Bowl + Tofu Pad Thai",
+          "orders": 17
+        },
+        {
+          "scope": "Jan|Asian",
+          "name": "California Roll + Edamame",
+          "orders": 15
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Spaghetti + Spaghetti & Meatballs",
+          "orders": 18
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Eggplant Parmesan + Meat Lasagna",
+          "orders": 14
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Meat Lasagna + Spaghetti & Meatballs",
+          "orders": 14
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Chicken Parmesan + Spaghetti & Meatballs",
+          "orders": 13
+        },
+        {
+          "scope": "Jan|Italian",
+          "name": "Mushroom Ravioli + Spaghetti & Meatballs",
+          "orders": 13
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chips & Salsa + Steak Torta",
+          "orders": 29
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chicken Burrito + Steak Torta",
+          "orders": 21
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Steak Burrito + Steak Torta",
+          "orders": 16
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chicken Burrito + Chicken Torta",
+          "orders": 15
+        },
+        {
+          "scope": "Jan|Mexican",
+          "name": "Chips & Salsa + Steak Burrito",
+          "orders": 14
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Cheeseburger + Edamame",
+          "orders": 32
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 27
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Edamame + Korean Beef Bowl",
+          "orders": 26
+        },
+        {
+          "scope": "Feb|All",
+          "name": "French Fries + Korean Beef Bowl",
+          "orders": 26
+        },
+        {
+          "scope": "Feb|All",
+          "name": "Cheeseburger + Steak Torta",
+          "orders": 24
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 27
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Cheeseburger + Mac & Cheese",
+          "orders": 19
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Hamburger + Mac & Cheese",
+          "orders": 19
+        },
+        {
+          "scope": "Feb|American",
+          "name": "Cheeseburger + French Fries",
+          "orders": 18
+        },
+        {
+          "scope": "Feb|American",
+          "name": "French Fries + Mac & Cheese",
+          "orders": 16
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Edamame + Korean Beef Bowl",
+          "orders": 26
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Edamame + Orange Chicken",
+          "orders": 20
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Edamame + Tofu Pad Thai",
+          "orders": 19
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Korean Beef Bowl + Orange Chicken",
+          "orders": 18
+        },
+        {
+          "scope": "Feb|Asian",
+          "name": "Korean Beef Bowl + Tofu Pad Thai",
+          "orders": 18
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Eggplant Parmesan + Spaghetti & Meatballs",
+          "orders": 16
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Spaghetti + Spaghetti & Meatballs",
+          "orders": 13
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Eggplant Parmesan + Spaghetti",
+          "orders": 12
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Eggplant Parmesan + Fettuccine Alfredo",
+          "orders": 11
+        },
+        {
+          "scope": "Feb|Italian",
+          "name": "Mushroom Ravioli + Spaghetti & Meatballs",
+          "orders": 11
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chicken Burrito + Steak Torta",
+          "orders": 18
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chips & Salsa + Steak Torta",
+          "orders": 14
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Steak Burrito + Steak Torta",
+          "orders": 14
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chicken Torta + Steak Torta",
+          "orders": 13
+        },
+        {
+          "scope": "Feb|Mexican",
+          "name": "Chips & Salsa + Steak Burrito",
+          "orders": 13
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Edamame + Hamburger",
+          "orders": 28
+        },
+        {
+          "scope": "Mar|All",
+          "name": "French Fries + Hamburger",
+          "orders": 27
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 24
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Chips & Salsa + Hamburger",
+          "orders": 24
+        },
+        {
+          "scope": "Mar|All",
+          "name": "Chicken Burrito + Edamame",
+          "orders": 23
+        },
+        {
+          "scope": "Mar|American",
+          "name": "French Fries + Hamburger",
+          "orders": 27
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Cheeseburger + Hamburger",
+          "orders": 24
+        },
+        {
+          "scope": "Mar|American",
+          "name": "French Fries + Mac & Cheese",
+          "orders": 23
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Cheeseburger + Mac & Cheese",
+          "orders": 22
+        },
+        {
+          "scope": "Mar|American",
+          "name": "Cheeseburger + French Fries",
+          "orders": 21
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Korean Beef Bowl + Tofu Pad Thai",
+          "orders": 23
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Edamame + Orange Chicken",
+          "orders": 21
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Edamame + Tofu Pad Thai",
+          "orders": 19
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Orange Chicken + Tofu Pad Thai",
+          "orders": 19
+        },
+        {
+          "scope": "Mar|Asian",
+          "name": "Edamame + Korean Beef Bowl",
+          "orders": 18
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Mushroom Ravioli + Spaghetti & Meatballs",
+          "orders": 17
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Chicken Parmesan + Spaghetti & Meatballs",
+          "orders": 16
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Spaghetti + Spaghetti & Meatballs",
+          "orders": 14
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Chicken Parmesan + Spaghetti",
+          "orders": 12
+        },
+        {
+          "scope": "Mar|Italian",
+          "name": "Chicken Parmesan + Eggplant Parmesan",
+          "orders": 11
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chips & Salsa + Steak Torta",
+          "orders": 15
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chicken Burrito + Steak Torta",
+          "orders": 12
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chicken Torta + Steak Burrito",
+          "orders": 12
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chicken Burrito + Chips & Salsa",
+          "orders": 11
+        },
+        {
+          "scope": "Mar|Mexican",
+          "name": "Chicken Torta + Steak Torta",
+          "orders": 11
+        }
+      ],
+      "source": {
+        "name": "Maven Analytics Restaurant Orders",
+        "type": "file",
+        "files": [
+          "order_details.csv",
+          "menu_items.csv"
+        ],
+        "url": "https://mavenanalytics.io/data-playground/restaurant-orders",
+        "description": "Fictional restaurant, January\u2013March 2023. Join by item ID. Omit order lines without a matched menu item. Sales sum menu prices, and orders count distinct IDs within the filter."
+      },
+      "methods": [
+        {
+          "language": "text",
+          "code": "Run build_dashboard_data.py with the two source CSVs."
+        }
+      ]
+    }
+  },
+  "facets": {
+    "month": [
+      "All",
+      "Jan",
+      "Feb",
+      "Mar"
+    ],
+    "category": [
+      "All",
+      "American",
+      "Asian",
+      "Italian",
+      "Mexican"
+    ]
+  },
+  "id": "dashboard:c24e6bdd-525e-48ff-a15d-47ba10af77f0",
+  "exportPreferences": {
+    "selected": null,
+    "destinations": []
+  }
+}
