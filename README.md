@@ -2,7 +2,7 @@
 
 A Python analysis of a fictional international-cuisine restaurant from January to March 2023. The project examines what drove sales, when demand peaked, and which items customers ordered together.
 
-**[Open the interactive dashboard](https://oolly99.github.io/restaurant-sales-analysis/)** · [Analysis notebook](notebooks/restaurant_sales_menu_analysis.ipynb) · [Source data](data/raw) · [Power BI rebuild guide](power-bi)
+**[Open the interactive dashboard](https://oolly99.github.io/restaurant-sales-analysis/)** · [Download the dashboard PDF](docs/restaurant-sales-dashboard.pdf) · [Analysis notebook](notebooks/restaurant_sales_menu_analysis.ipynb) · [Source data](data/raw) · [Optional Power BI rebuild guide](power-bi)
 
 ![Dashboard preview showing the four headline metrics and sales charts](docs/preview.png)
 
